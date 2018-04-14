@@ -6,13 +6,12 @@ import { AppComponent } from './app.component';
 
 
 @NgModule({
+  imports: [
+    BrowserModule.withServerTransition({ appId: 'valentin-got-cv' })
+  ],
   declarations: [
     AppComponent
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
