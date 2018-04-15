@@ -1,0 +1,80 @@
+//----------------------------------------
+//  Break points
+//----------------------------------------
+
+$bp-xs: 'xs';
+$bp-sm: 'sm';
+$bp-md: 'md';
+$bp-lg: 'lg';
+$bp-xl: 'lg';
+
+$bp-lt-sm: 'lt-sm';
+$bp-lt-md: 'lt-md';
+$bp-lt-lg: 'lt-lg';
+$bp-lt-xl: 'lt-xl';
+
+$bp-gt-xs: 'gt-xs';
+$bp-gt-sm: 'gt-sm';
+$bp-gt-md: 'gt-md';
+$bp-gt-lg: 'gt-lg';
+
+/// Helper to use Google Material's break points
+///
+/// @param {String} $bp Break point to apply
+@mixin breakpoint ($bp) {
+
+  @if $bp == $bp-xs {
+    @media screen and (max-width: 599px) { @content }
+  }
+
+  @if $bp == $bp-sm {
+    @media screen and (min-width: 600px) and (max-width: 959px) { @content }
+  }
+
+  @if $bp == $bp-md {
+    @media screen and (min-width: 960px) and (max-width: 1279px) { @content }
+  }
+
+  @if $bp == $bp-lg {
+    @media screen and (min-width: 1280px) and (max-width: 1919px) { @content }
+  }
+
+  @if $bp == $bp-lg {
+    @media screen and (min-width: 1920px) and (max-width: 5000px) { @content }
+  }
+
+
+  @if $bp == $bp-lt-sm {
+    @media screen and (max-width: 599px) { @content }
+  }
+
+  @if $bp == $bp-lt-md {
+    @media screen and (max-width: 959px) { @content }
+  }
+
+  @if $bp == $bp-lt-lg {
+    @media screen and (max-width: 1279px) { @content }
+  }
+
+  @if $bp == $bp-lt-xl {
+    @media screen and (max-width: 1919px) { @content }
+  }
+
+
+  @if $bp == $bp-gt-xs {
+    @media screen and (min-width: 600px) { @content }
+  }
+
+  @if $bp == $bp-gt-sm {
+    @media screen and (min-width: 960px) { @content }
+  }
+
+  @if $bp == $bp-gt-md {
+    @media screen and (min-width: 1280px) { @content }
+  }
+
+  @if $bp == $bp-gt-lg {
+    @media screen and (min-width: 1920px) { @content }
+  }
+
+}
