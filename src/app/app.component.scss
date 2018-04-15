@@ -2,9 +2,32 @@
 //  App
 //----------------------------------------
 
+@import '../css/abstracts/break-points';
+
+//----------------------------------------
+
 :host {
   flex: 1;
+  display: flex;
+  justify-content: center;
   margin: 12px;
+  padding: 40px 0;
   border: 4px dotted #DCDCDC;
-}
 
+  .container {
+    width: 100%;
+  }
+
+  @include breakpoint($bp-gt-xs) {
+    padding: 60px 0;
+  }
+
+  @include breakpoint($bp-gt-md) {
+
+    .container {
+      width: 1280px;
+    }
+
+  }
+
+}
