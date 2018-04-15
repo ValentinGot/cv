@@ -4,6 +4,7 @@ import { MatIconModule } from '@angular/material';
 
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { UserService } from './user/user.service';
+import { TitleComponent } from './title/title.component';
 
 @NgModule({
   imports: [
@@ -11,13 +12,15 @@ import { UserService } from './user/user.service';
     MatIconModule
   ],
   declarations: [
-    PersonalInfoComponent
+    PersonalInfoComponent,
+    TitleComponent
   ],
   providers: [
     UserService
   ],
   exports: [
-    PersonalInfoComponent
+    PersonalInfoComponent,
+    TitleComponent
   ]
 })
 export class SharedModule { }
