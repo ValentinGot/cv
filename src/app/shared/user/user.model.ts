@@ -1,17 +1,8 @@
 import { JsonObject, JsonProperty } from 'json2typescript';
 
 import { DateConverter } from '../date.converter';
-
-@JsonObject
-export class Address {
-
-  @JsonProperty('city', String)
-  city: string | undefined = undefined;
-
-  @JsonProperty('department', Number)
-  department: number | undefined = undefined;
-
-}
+import { Address } from './address.model';
+import { Social } from './social.model';
 
 @JsonObject
 export class User {
@@ -36,6 +27,9 @@ export class User {
 
   @JsonProperty('email', String)
   email: string | undefined = undefined;
+
+  @JsonProperty('socials', [ Social ])
+  socials: Social[] | undefined = undefined;
 
   get age (): number {
     const ageDiff = Date.now() - this.birthDate.getTime();
