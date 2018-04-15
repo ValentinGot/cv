@@ -17,6 +17,7 @@
 
   .container {
     width: 100%;
+    padding: 0 12px;
   }
 
   @include breakpoint($bp-gt-xs) {
@@ -26,7 +27,7 @@
   @include breakpoint($bp-gt-md) {
 
     .container {
-      width: 1280px;
+      width: 500px;
     }
 
   }
