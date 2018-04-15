@@ -25,3 +25,16 @@ body {
   background-image: url('assets/texture.png');
   color: $primary-text-color;
 }
+
+a {
+  text-decoration: none;
+  transition: .25s color;
+  color: $primary-color;
+
+  &:hover,
+  &:focus,
+  &:visited {
+    color: darken($primary-color, 10%);
+  }
+
+}

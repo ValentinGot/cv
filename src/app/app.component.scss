@@ -3,6 +3,7 @@
 //----------------------------------------
 
 @import '../css/abstracts/break-points';
+@import '../css/abstracts/colors';
 
 //----------------------------------------
 
@@ -12,7 +13,7 @@
   justify-content: center;
   margin: 12px;
   padding: 40px 0;
-  border: 4px dotted #DCDCDC;
+  border: 4px dotted $divider-color;
 
   .container {
     width: 100%;
