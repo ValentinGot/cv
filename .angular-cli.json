@@ -86,6 +86,7 @@
   "defaults": {
     "styleExt": "scss",
     "component": {
+      "changeDetection": "OnPush"
     }
   }
 }
