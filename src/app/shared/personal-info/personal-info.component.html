@@ -24,11 +24,12 @@
   </p>
 </div>
 
-<div class="socials">
+<div class="socials" *ngIf="user.socials.length > 0" data-info="socials">
   <a
     *ngFor="let social of user.socials"
     [href]="social.url"
     target="_blank"
+    data-info="social"
   >
     <mat-icon fontSet="fab" fontIcon="fa-{{ social.type }}"></mat-icon>
   </a>
