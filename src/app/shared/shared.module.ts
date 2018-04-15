@@ -1,18 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material';
 
-import { TitleComponent } from './title/title.component';
+import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { UserService } from './user/user.service';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MatIconModule
   ],
   declarations: [
-    TitleComponent
+    PersonalInfoComponent
+  ],
   providers: [
     UserService
   ],
+  exports: [
+    PersonalInfoComponent
   ]
 })
 export class SharedModule { }

@@ -28,12 +28,12 @@ body {
 
 a {
   text-decoration: none;
-  transition: .25s color;
+  transition: .25s color, .25s background-color;
   color: $primary-color;
 
   &:hover,
   &:focus,
-  &:visited {
+  &:active {
     color: darken($primary-color, 10%);
   }
 

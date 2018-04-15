@@ -1,0 +1,35 @@
+<div class="photo-container">
+  <img [src]="user.photo" />
+</div>
+
+<h1 data-info="name">
+  {{ user.firstName }}
+  <span>{{ user.lastName }}</span>
+</h1>
+
+<h2 data-info="job">{{ user.job }}</h2>
+
+<div class="contact-information">
+  <p data-info="age">
+    <mat-icon>hourglass_empty</mat-icon>
+    {{ user.age }} ans</p>
+  <p data-info="location">
+    <mat-icon>place</mat-icon>
+    {{ user.address.city }}
+    ({{ user.address.department }})
+  </p>
+  <p data-info="email">
+    <mat-icon>email</mat-icon>
+    <a href="mailto:{{ user.email }}">{{ user.email }}</a>
+  </p>
+</div>
+
+<div class="socials">
+  <a
+    *ngFor="let social of user.socials"
+    [href]="social.url"
+    target="_blank"
+  >
+    <mat-icon fontSet="fab" fontIcon="fa-{{ social.type }}"></mat-icon>
+  </a>
+</div>
