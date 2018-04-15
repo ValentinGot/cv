@@ -4710,6 +4710,10 @@ json-stringify-safe@5.0.x, json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
 
+json2typescript@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/json2typescript/-/json2typescript-1.0.5.tgz#c3f01ab65f129fda47f0b43c06a7f1e7c9273a3d"
+
 json3@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/json3/-/json3-3.3.2.tgz#3c0434743df93e2f5c42aee7b19bcb483575f4e1"
