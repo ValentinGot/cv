@@ -12,9 +12,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Roadmap:
 * 100% lighthouse score
+* Firebase
 * Codecov
 * Cypress
 * Travis
+* Docker
 
 ## Development server
 
