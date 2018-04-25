@@ -153,9 +153,9 @@
   version "5.2.9"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-5.2.9.tgz#4838bb6319c99e8f5beb08bdfb392ee9a1173766"
 
-"@angular/material@^5.2.4":
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/@angular/material/-/material-5.2.4.tgz#9e823798324283d23ea839156fac5bcb73443d55"
+"@angular/material@^5.2.0":
+  version "5.2.5"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-5.2.5.tgz#287af95d234e0644244d9db565f7a05c10b737f8"
   dependencies:
     tslib "^1.7.1"
 
@@ -171,9 +171,9 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/platform-server@^5.2.9":
-  version "5.2.9"
-  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-5.2.9.tgz#9905cc152242472da2557bf9fec73685449b92c4"
+"@angular/platform-server@^5.2.0":
+  version "5.2.10"
+  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-5.2.10.tgz#36185a8ce137c1b65d74186f4b21566bcdb791b3"
   dependencies:
     domino "^1.0.29"
     tslib "^1.7.1"
@@ -185,9 +185,9 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/service-worker@^5.2.9":
-  version "5.2.9"
-  resolved "https://registry.yarnpkg.com/@angular/service-worker/-/service-worker-5.2.9.tgz#47ee439f2f896ac701fee271d046589a6c46b6af"
+"@angular/service-worker@^5.2.0":
+  version "5.2.10"
+  resolved "https://registry.yarnpkg.com/@angular/service-worker/-/service-worker-5.2.10.tgz#ef861929e2ca5f1241f44be1ad5295544486514c"
   dependencies:
     tslib "^1.7.1"
 
@@ -356,6 +356,18 @@
     tree-kill "^1.0.0"
     webpack-sources "^1.1.0"
 
+"@nguniversal/common@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-5.0.0.tgz#e89fdc34c540f3b818873f7d85d7da48abfc41ee"
+
+"@nguniversal/express-engine@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/express-engine/-/express-engine-5.0.0.tgz#e218fa9fbc7b47379bc106f69ada274e05631243"
+
+"@nguniversal/module-map-ngfactory-loader@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/module-map-ngfactory-loader/-/module-map-ngfactory-loader-5.0.0.tgz#359c9283d942ed7806647e66c29ee2e9fb90df6e"
+
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@protobufjs/aspromise/-/aspromise-1.1.2.tgz#9b8b0cc663d669a7d8f6f5d0893a14d348f30fbf"
@@ -444,7 +456,7 @@
     "@types/events" "*"
     "@types/node" "*"
 
-"@types/express@*", "@types/express@^4.0.36", "@types/express@^4.11.1":
+"@types/express@*", "@types/express@^4.11.1":
   version "4.11.1"
   resolved "https://registry.yarnpkg.com/@types/express/-/express-4.11.1.tgz#f99663b3ab32d04cb11db612ef5dd7933f75465b"
   dependencies:
@@ -681,21 +693,6 @@ amqplib@^0.5.2:
     buffer-more-ints "0.0.2"
     readable-stream "1.x >=1.1.9"
     safe-buffer "^5.0.1"
-
-angular-universal-express-firebase@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/angular-universal-express-firebase/-/angular-universal-express-firebase-0.0.4.tgz#eb8cc8901c057707867835a30533eb5b4fffa1ea"
-  dependencies:
-    "@types/express" "^4.0.36"
-    angular-universal-express "^0.0.3"
-    express "^4.15.3"
-
-angular-universal-express@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/angular-universal-express/-/angular-universal-express-0.0.3.tgz#7e3cb43ca6230bb806802fd770977d281ce5d44b"
-  dependencies:
-    "@types/express" "^4.0.36"
-    express "^4.15.3"
 
 ansi-colors@^1.0.1:
   version "1.1.0"
@@ -2618,7 +2615,7 @@ engine.io@~3.1.0:
   optionalDependencies:
     uws "~9.14.0"
 
-enhanced-resolve@^3.1.0, enhanced-resolve@^3.4.0:
+enhanced-resolve@^3.0.0, enhanced-resolve@^3.1.0, enhanced-resolve@^3.4.0:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-3.4.1.tgz#0421e339fd71419b3da13d129b3979040230476e"
   dependencies:
@@ -2867,7 +2864,7 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
-express@^4.15.3, express@^4.16.2:
+express@^4.16.2:
   version "4.16.3"
   resolved "https://registry.yarnpkg.com/express/-/express-4.16.3.tgz#6af8a502350db3246ecc4becf6b5a34d22f7ed53"
   dependencies:
@@ -6865,7 +6862,7 @@ redis@^2.7.1:
     redis-commands "^1.2.0"
     redis-parser "^2.6.0"
 
-reflect-metadata@^0.1.2:
+reflect-metadata@^0.1.12, reflect-metadata@^0.1.2:
   version "0.1.12"
   resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.12.tgz#311bf0c6b63cd782f228a81abe146a2bfa9c56f2"
 
@@ -7323,7 +7320,7 @@ semver-intersect@^1.1.2:
   dependencies:
     semver "^5.0.0"
 
-"semver@2 || 3 || 4 || 5", semver@^5.0.0, semver@^5.1.0, semver@^5.3.0:
+"semver@2 || 3 || 4 || 5", semver@^5.0.0, semver@^5.0.1, semver@^5.1.0, semver@^5.3.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
 
@@ -8200,6 +8197,16 @@ trim-right@^1.0.1:
   resolved "https://registry.yarnpkg.com/true-case-path/-/true-case-path-1.0.2.tgz#7ec91130924766c7f573be3020c34f8fdfd00d62"
   dependencies:
     glob "^6.0.4"
+
+ts-loader@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-3.5.0.tgz#151d004dcddb4cf8e381a3bf9d6b74c2d957a9c0"
+  dependencies:
+    chalk "^2.3.0"
+    enhanced-resolve "^3.0.0"
+    loader-utils "^1.0.2"
+    micromatch "^3.1.4"
+    semver "^5.0.1"
 
 ts-node@^5.0.1:
   version "5.0.1"
