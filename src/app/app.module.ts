@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
+import { TitleComponent } from './title/title.component';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { PersonalInfoComponent } from './personal-info/personal-info.component';
   declarations: [
     AppComponent,
     PersonalInfoComponent,
+    TitleComponent
   ],
   bootstrap: [ AppComponent ]
 })
