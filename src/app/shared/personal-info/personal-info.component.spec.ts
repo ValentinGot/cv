@@ -21,22 +21,22 @@ describe('PersonalInfoComponent', () => {
     .compileComponents();
   }));
 
-  beforeEach (async(() => {
+  beforeEach (() => {
     fixture = TestBed.createComponent(PersonalInfoComponent);
     component = fixture.componentInstance;
-  }));
+  });
 
-  it (`should throw an error if the 'user' input isn't of type User`, async(() => {
+  it (`should throw an error if the 'user' input isn't of type User`, () => {
     expect(() => fixture.detectChanges()).toThrow(new Error(`'user' input is required`));
-  }));
+  });
 
-  it (`should throw an error if the 'user' input isn't of type User`, async(() => {
+  it (`should throw an error if the 'user' input isn't of type User`, () => {
     component.user = {} as User;
 
     expect(() => fixture.detectChanges()).toThrow(new TypeError(`'user' input should be of type User`));
-  }));
+  });
 
-  it ('should show the user info', async(() => {
+  it ('should show the user info', () => {
     const user = new User();
     user.firstName = 'Perceval';
     user.lastName = 'le Gallois';
@@ -91,6 +91,6 @@ describe('PersonalInfoComponent', () => {
     const socialEls = socialsEl.queryAll(By.css('[data-info="social"]'));
 
     expect(socialEls.length).toEqual(2);
-  }));
+  });
 
 });
