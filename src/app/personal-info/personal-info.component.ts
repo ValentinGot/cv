@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 
-import { User } from '../user/user.model';
+import { User } from '../shared/user/user.model';
 
 @Component({
   selector: 'cv-personal-info',
