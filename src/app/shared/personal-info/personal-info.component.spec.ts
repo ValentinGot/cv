@@ -33,7 +33,7 @@ describe('PersonalInfoComponent', () => {
   it (`should throw an error if the 'user' input isn't of type User`, async(() => {
     component.user = {} as User;
 
-    expect(() => fixture.detectChanges()).toThrow(new TypeError(`'user' input should be of tye User`));
+    expect(() => fixture.detectChanges()).toThrow(new TypeError(`'user' input should be of type User`));
   }));
 
   it ('should show the user info', async(() => {

@@ -19,7 +19,7 @@ export class PersonalInfoComponent implements OnInit {
     }
 
     if (!(this.user instanceof User)) {
-      throw new TypeError(`'user' input should be of tye User`);
+      throw new TypeError(`'user' input should be of type User`);
     }
   }
 
