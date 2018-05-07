@@ -3,9 +3,9 @@ import { By } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material';
 
 import { PersonalInfoComponent } from './personal-info.component';
-import { User } from '../user/user.model';
-import { Address } from '../user/address.model';
-import { SocialType } from '../user/social.model';
+import { User } from '../shared/user/user.model';
+import { SocialType } from '../shared/user/social.model';
+import { Address } from '../shared/user/address.model';
 
 describe('PersonalInfoComponent', () => {
   let component: PersonalInfoComponent;
@@ -26,7 +26,7 @@ describe('PersonalInfoComponent', () => {
     component = fixture.componentInstance;
   });
 
-  it (`should throw an error if the 'user' input isn't of type User`, () => {
+  it (`should throw an error if the 'user' input isn't present`, () => {
     expect(() => fixture.detectChanges()).toThrow(new Error(`'user' input is required`));
   });
 
