@@ -2,8 +2,13 @@
   <mat-icon [svgIcon]="skill.icon"></mat-icon>
 </div>
 <div class="name-level-container">
-  <p class="name">{{ skill.name }}</p>
-  <div class="level" matTooltip="{{ skill.level }} / 10" matTooltipPosition="above">
+  <p class="name" data-info="name">{{ skill.name }}</p>
+  <div
+    class="level"
+    data-info="level"
+    matTooltip="{{ skill.level }} / 10"
+    matTooltipPosition="above"
+  >
     <span [style.width]="(skill.level * 10) + '%'"></span>
   </div>
 </div>
