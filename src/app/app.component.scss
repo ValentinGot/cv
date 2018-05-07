@@ -32,4 +32,9 @@
 
   }
 
+  @media print {
+    padding: 0;
+    border: none;
+  }
+
 }
