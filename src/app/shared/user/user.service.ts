@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
+import { SharedModule } from '../shared.module';
 import { User } from './user.model';
 import { Address } from './address.model';
 import { SocialType } from './social.model';
 
-@Injectable()
+@Injectable({
+  providedIn: SharedModule
+})
 export class UserService {
 
   constructor () { }
