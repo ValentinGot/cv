@@ -1,5 +1,6 @@
 <div class="main-skills">
   <cv-skill
+    data-repeater="main-skills"
     *ngFor="let skill of mainSkills"
     [skill]="skill"
   ></cv-skill>
@@ -7,6 +8,7 @@
 
 <div class="secondary-skills">
   <cv-skill
+    data-repeater="secondary-skills"
     *ngFor="let skill of secondarySkills"
     [skill]="skill"
   ></cv-skill>
