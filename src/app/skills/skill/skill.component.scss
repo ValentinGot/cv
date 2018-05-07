@@ -1,0 +1,79 @@
+//----------------------------------------
+//  Skill
+//----------------------------------------
+
+@import '../../../css/abstracts/break-points';
+@import '../../../css/abstracts/colors';
+@import '../../../css/abstracts/mixins';
+
+$skill-icon-background-color: #FFFFFF;
+$skill-icon-print-background-color: #EEEEEE;
+$skill-icon-color: $primary-color;
+$skill-icon-secondary-color: #A9A9A9;
+$skill-level-background-color: #CCCCCC;
+$skill-level-value-background-color: $primary-color;
+
+//----------------------------------------
+
+:host {
+  display: flex;
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin-right: 16px;
+    background-color: $skill-icon-background-color;
+    border-radius: 50%;
+
+    .mat-icon ::ng-deep .icon-cls {
+      color: $skill-icon-color;
+      fill: $skill-icon-color;
+    }
+
+    .mat-icon ::ng-deep .icon-cls2 {
+      color: $skill-icon-secondary-color;
+      fill: $skill-icon-secondary-color;
+    }
+
+  }
+
+  .name-level-container {
+    flex: 1;
+
+    .name {
+      margin: 0 0 4px;
+      text-transform: uppercase;
+    }
+
+    .level {
+      position: relative;
+      width: 100%;
+      height: 14px;
+      background-color: $skill-level-background-color;
+      border-radius: 8px;
+
+      span {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        height: 14px;
+        background-color: $skill-level-value-background-color;
+        border-radius: 8px;
+      }
+
+    }
+
+  }
+
+  @media print {
+
+    .icon-container {
+      background-color: $skill-icon-print-background-color;
+    }
+
+  }
+
+}

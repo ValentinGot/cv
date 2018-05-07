@@ -1,0 +1,13 @@
+<div class="main-skills">
+  <cv-skill
+    *ngFor="let skill of mainSkills"
+    [skill]="skill"
+  ></cv-skill>
+</div>
+
+<div class="secondary-skills">
+  <cv-skill
+    *ngFor="let skill of secondarySkills"
+    [skill]="skill"
+  ></cv-skill>
+</div>

@@ -1,29 +1,36 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 // import { ServiceWorkerModule } from '@angular/service-worker';
 import { TransferHttpCacheModule } from '@nguniversal/common';
-import { MatIconModule } from '@angular/material';
+import { MatIconModule, MatTooltipModule } from '@angular/material';
 
 // import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { TitleComponent } from './title/title.component';
+import { SkillsComponent } from './skills/skills.component';
+import { SkillComponent } from './skills/skill/skill.component';
 
 @NgModule({
   imports: [
     BrowserModule.withServerTransition({ appId: 'valentin-got-cv' }),
     // ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     TransferHttpCacheModule,
-    NoopAnimationsModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
     MatIconModule,
+    MatTooltipModule,
     SharedModule
   ],
   declarations: [
     AppComponent,
     PersonalInfoComponent,
-    TitleComponent
+    TitleComponent,
+    SkillsComponent,
+    SkillComponent
   ],
   bootstrap: [ AppComponent ]
 })

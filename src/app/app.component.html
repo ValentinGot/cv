@@ -1,7 +1,14 @@
 <div class="container">
 
-  <cv-personal-info [user]="user$ | async"></cv-personal-info>
+  <cv-personal-info
+    [user]="user$ | async"
+  ></cv-personal-info>
 
   <cv-title>Compétences</cv-title>
+
+  <cv-skills
+    [mainSkills]="mainSkills$ | async"
+    [secondarySkills]="secondarySkills$ | async"
+  ></cv-skills>
 
 </div>
