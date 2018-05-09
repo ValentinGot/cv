@@ -13,6 +13,8 @@ import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { TitleComponent } from './title/title.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillComponent } from './skills/skill/skill.component';
+import { TrainingsComponent } from './trainings/trainings.component';
+import { TrainingComponent } from './trainings/training/training.component';
 
 @NgModule({
   imports: [
@@ -30,7 +32,9 @@ import { SkillComponent } from './skills/skill/skill.component';
     PersonalInfoComponent,
     TitleComponent,
     SkillsComponent,
-    SkillComponent
+    SkillComponent,
+    TrainingsComponent,
+    TrainingComponent
   ],
   bootstrap: [ AppComponent ]
 })

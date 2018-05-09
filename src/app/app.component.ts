@@ -7,6 +7,8 @@ import { UserService } from './shared/user/user.service';
 import { User } from './shared/user/user.model';
 import { SkillService } from './skills/skill.service';
 import { Skill } from './skills/skill.model';
+import { TrainingService } from './trainings/training.service';
+import { Training } from './trainings/training.model';
 
 @Component({
   selector: 'cv-root',
@@ -18,10 +20,12 @@ export class AppComponent implements OnInit {
   user$: Observable<User>;
   mainSkills$: Observable<Skill[]>;
   secondarySkills$: Observable<Skill[]>;
+  trainings$: Observable<Training[]>;
 
   constructor (
     private userService: UserService,
     private skillService: SkillService,
+    private trainingService: TrainingService,
     private sanitizer: DomSanitizer,
     private iconRegistry: MatIconRegistry
   ) { }
@@ -30,6 +34,7 @@ export class AppComponent implements OnInit {
     this.user$ = this.userService.fetch();
     this.mainSkills$ = this.skillService.fetch();
     this.secondarySkills$ = this.skillService.fetchSecondary();
+    this.trainings$ = this.trainingService.fetch();
 
     this.registerSkillIcons();
   }
