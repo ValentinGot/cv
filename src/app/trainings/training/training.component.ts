@@ -8,9 +8,19 @@ import { Training } from '../training.model';
   styleUrls: ['./training.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TrainingComponent {
+export class TrainingComponent implements OnInit {
 
   @Input()
   training: Training;
+
+  ngOnInit () {
+    if (!this.training) {
+      throw new Error(`'training' input is required`);
+    }
+
+    if (!(this.training instanceof Training)) {
+      throw new TypeError(`'training' input should be of type Training`);
+    }
+  }
 
 }

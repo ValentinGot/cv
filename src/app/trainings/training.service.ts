@@ -12,21 +12,22 @@ export class TrainingService {
 
   fetch (): Observable<Training[]> {
     return of([
-      {
-        year: 2009,
-        name: 'BAC S'
-      },
-      {
-        year: 2011,
-        name: 'IUT',
-        subTitle: 'Réseaux et Télécommunication'
-      },
-      {
-        year: 2014,
-        name: 'ESIPE MLV',
-        subTitle: 'Informatique et Réseaux'
-      }
+      this.createTraining(2009, 'BAC S'),
+      this.createTraining(2011, 'IUT', 'Réseaux et Télécommunication'),
+      this.createTraining(2014, 'ESIPE MLV', 'Informatique et Réseaux')
     ]);
+  }
+
+  private createTraining (year: number, name: string, subTitle?: string): Training {
+    const training = new Training();
+
+    training.year = year;
+    training.name = name;
+    if (subTitle) {
+      training.subTitle = subTitle;
+    }
+
+    return training;
   }
 
 }
