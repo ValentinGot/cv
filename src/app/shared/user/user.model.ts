@@ -7,9 +7,6 @@ import { Social } from './social.model';
 @JsonObject
 export class User {
 
-  @JsonProperty('photo', String)
-  photo: string | undefined = undefined;
-
   @JsonProperty('firstName', String)
   firstName: string | undefined = undefined;
 

@@ -1,7 +1,8 @@
 <div class="container">
 
   <cv-personal-info
-    [user]="user$ | async"
+    *ngIf="user$ | async as user"
+    [user]="user"
   ></cv-personal-info>
 
   <cv-title>Compétences</cv-title>
