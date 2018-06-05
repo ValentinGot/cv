@@ -7,7 +7,7 @@ import { JsonConvert } from 'json2typescript';
 import { SharedModule } from '../shared.module';
 import { User } from './user.model';
 import { environment } from '../../../environments/environment';
-import { LangService } from '../lang.service';
+import { LangService } from '../lang/lang.service';
 
 @Injectable({
   providedIn: SharedModule
@@ -21,8 +21,9 @@ export class UserService {
   ) { }
 
   fetch (): Observable<User> {
-    return this.langService.langObserver.pipe(
-      switchMap((lang) => this.http.get(`${environment.baseUrl}/${UserService.RESOURCE}?orderBy="lang"&equalTo="${lang}"`)),
+    return this.http.get(
+      `${environment.baseUrl}/${UserService.RESOURCE}?orderBy="lang"&equalTo="${this.langService.getActiveLang()}"`
+    ).pipe(
       map((res) => res[Object.keys(res)[0]]),
       map((user) => (new JsonConvert()).deserialize(user, User))
     );

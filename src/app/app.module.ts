@@ -16,6 +16,7 @@ import { SkillComponent } from './skills/skill/skill.component';
 import { TrainingsComponent } from './trainings/trainings.component';
 import { TrainingComponent } from './trainings/training/training.component';
 import { GithubCornerComponent } from './github-corner/github-corner.component';
+import { LanguageSelectorComponent } from './language-selector/language-selector.component';
 
 @NgModule({
   imports: [
@@ -36,7 +37,8 @@ import { GithubCornerComponent } from './github-corner/github-corner.component';
     SkillComponent,
     TrainingsComponent,
     TrainingComponent,
-    GithubCornerComponent
+    GithubCornerComponent,
+    LanguageSelectorComponent
   ],
   bootstrap: [ AppComponent ]
 })

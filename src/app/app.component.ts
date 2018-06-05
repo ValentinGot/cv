@@ -9,6 +9,8 @@ import { SkillService } from './skills/skill.service';
 import { Skill } from './skills/skill.model';
 import { TrainingService } from './trainings/training.service';
 import { Training } from './trainings/training.model';
+import { Lang } from './shared/lang/lang.model';
+import { LangService } from './shared/lang/lang.service';
 
 @Component({
   selector: 'cv-root',
@@ -18,28 +20,44 @@ import { Training } from './trainings/training.model';
 })
 export class AppComponent implements OnInit {
   user$: Observable<User>;
-  mainSkills$: Observable<Skill[]>;
-  secondarySkills$: Observable<Skill[]>;
+  skills$: Observable<Skill[]>;
   trainings$: Observable<Training[]>;
 
   constructor (
     private userService: UserService,
     private skillService: SkillService,
     private trainingService: TrainingService,
+    private langService: LangService,
     private sanitizer: DomSanitizer,
     private iconRegistry: MatIconRegistry
   ) { }
 
   ngOnInit () {
-    this.user$ = this.userService.fetch();
-    this.mainSkills$ = this.skillService.fetch();
-    this.secondarySkills$ = this.skillService.fetchSecondary();
-    this.trainings$ = this.trainingService.fetch();
+    this.langService.langChange.subscribe(() => {
+      this.user$ = this.userService.fetch();
+      this.skills$ = this.skillService.fetch();
+      this.trainings$ = this.trainingService.fetch();
+    });
 
+    this.registerLangIcons();
     this.registerSkillIcons();
   }
 
-  private registerSkillIcons () {
+  private registerLangIcons (): void {
+    this.iconRegistry
+      .addSvgIconInNamespace(
+        'flag',
+        'fr',
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/flag/fr.svg')
+      )
+      .addSvgIconInNamespace(
+        'flag',
+        'gb',
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/flag/gb.svg')
+      );
+  }
+
+  private registerSkillIcons (): void {
     this.iconRegistry
       .addSvgIconInNamespace(
         'skill',
