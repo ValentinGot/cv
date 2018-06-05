@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 
 import { Skill } from './skill.model';
 
@@ -8,12 +8,17 @@ import { Skill } from './skill.model';
   styleUrls: ['./skills.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SkillsComponent {
+export class SkillsComponent implements OnInit {
 
   @Input()
+  skills: Skill[];
+
   mainSkills: Skill[];
-
-  @Input()
   secondarySkills: Skill[];
+
+  ngOnInit () {
+    this.mainSkills = this.skills.filter((skill) => skill.main);
+    this.secondarySkills = this.skills.filter((skill) => !skill.main);
+  }
 
 }

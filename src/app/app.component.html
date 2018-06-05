@@ -10,8 +10,8 @@
   <cv-title>Compétences</cv-title>
 
   <cv-skills
-    [mainSkills]="mainSkills$ | async"
-    [secondarySkills]="secondarySkills$ | async"
+    *ngIf="skills$ | async as skills"
+    [skills]="skills"
   ></cv-skills>
 
   <cv-title>Formation</cv-title>
