@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-// import { ServiceWorkerModule } from '@angular/service-worker';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { TransferHttpCacheModule } from '@nguniversal/common';
 import { MatIconModule, MatTooltipModule } from '@angular/material';
 
-// import { environment } from '../environments/environment';
+import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
@@ -21,7 +21,7 @@ import { LanguageSelectorComponent } from './language-selector/language-selector
 @NgModule({
   imports: [
     BrowserModule.withServerTransition({ appId: 'valentin-got-cv' }),
-    // ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     TransferHttpCacheModule,
     BrowserAnimationsModule,
     HttpClientModule,
