@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Valentin GOT" style="border-radius: 50%" src="https://github.com/ValentinGot/cv/blob/develop/src/assets/photo.jpg?raw=true" />
+  <img alt="Valentin GOT" src="https://github.com/ValentinGot/cv/blob/develop/src/assets/launcher/launcher-256x256.png?raw=true" />
 </p>
 
 <p align="center">Personal resume</p>
