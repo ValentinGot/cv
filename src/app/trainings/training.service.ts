@@ -1,33 +1,31 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { JsonConvert } from 'json2typescript';
 
 import { Training } from './training.model';
+import { LangService } from '../shared/lang/lang.service';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TrainingService {
+  private static RESOURCE = 'trainings.json';
 
-  constructor () { }
+  constructor (
+    private http: HttpClient,
+    private langService: LangService
+  ) { }
 
   fetch (): Observable<Training[]> {
-    return of([
-      this.createTraining(2009, 'BAC S'),
-      this.createTraining(2011, 'IUT', 'Réseaux et Télécommunication'),
-      this.createTraining(2014, 'ESIPE MLV', 'Informatique et Réseaux')
-    ]);
-  }
-
-  private createTraining (year: number, name: string, subTitle?: string): Training {
-    const training = new Training();
-
-    training.year = year;
-    training.name = name;
-    if (subTitle) {
-      training.subTitle = subTitle;
-    }
-
-    return training;
+    return this.http.get(
+      `${environment.baseUrl}/${TrainingService.RESOURCE}?orderBy="lang"&equalTo="${this.langService.getActiveLang()}"`
+    ).pipe(
+      map((res) => res[Object.keys(res)[0]].trainings),
+      map((trainings) => (new JsonConvert()).deserialize(trainings, Training))
+    );
   }
 
 }
