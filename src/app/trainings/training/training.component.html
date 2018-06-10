@@ -1,9 +1,9 @@
 <div class="name-sub-title-container" [class.has-sub-title]="!!training.subTitle">
-  <p class="name">{{ training.name }}</p>
-  <p class="sub-title" *ngIf="training.subTitle">{{ training.subTitle }}</p>
+  <p class="name" data-info="name">{{ training.name }}</p>
+  <p class="sub-title" data-info="subtitle" *ngIf="training.subTitle">{{ training.subTitle }}</p>
 </div>
 <span class="circle"></span>
-<p class="year">
+<p class="year" data-info="year">
   <mat-icon>today</mat-icon>
   {{ training.year }}
 </p>
