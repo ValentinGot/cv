@@ -41,5 +41,5 @@ module.exports = function (config) {
     configuration.browsers = ['ChromeTravisCI'];
   }
 
-  config.set(config);
+  config.set(configuration);
 };
