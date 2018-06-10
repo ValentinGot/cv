@@ -23,6 +23,8 @@ describe('LangService', () => {
   describe ('#getActiveLang', () => {
 
     it (`should set 'fr' as default language`, inject ([ LangService ], (service: LangService) => {
+      localStorage.removeItem(LangService.LANG_KEY);
+
       expect(service.getActiveLang()).toEqual('fr');
     }));
 
