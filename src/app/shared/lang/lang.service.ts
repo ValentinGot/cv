@@ -9,7 +9,7 @@ import { Lang } from './lang.model';
   providedIn: SharedModule
 })
 export class LangService {
-  private static LANG_KEY = 'lang';
+  public static LANG_KEY = 'lang';
   private static DEFAULT_LANG = 'fr';
 
   private langObserver: Subject<string> = new Subject<string>();
