@@ -1,4 +1,14 @@
-# Cv
+<p align="center">
+  <img alt="Valentin GOT" src="https://github.com/ValentinGot/cv/blob/develop/src/assets/photo.jpg?raw=true" />
+</p>
+
+<p align="center">Personal resume</p>
+
+<p align="center">
+  <a href="https://travis-ci.org/ValentinGot/cv"><img src="https://img.shields.io/travis/ValentinGot/cv/develop.svg?label=Linux%20build" alt="Linux Build Status"></a>
+</p>
+
+---
 
 # Work in progress
 
