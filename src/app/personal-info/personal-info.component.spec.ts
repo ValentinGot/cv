@@ -4,7 +4,7 @@ import { By } from '@angular/platform-browser';
 
 import { PersonalInfoComponent } from './personal-info.component';
 import { User } from '../shared/user/user.model';
-import { SocialType } from '../shared/user/social.model';
+import { Social, SocialType } from '../shared/user/social.model';
 import { Address } from '../shared/user/address.model';
 
 describe('PersonalInfoComponent', () => {
@@ -46,10 +46,16 @@ describe('PersonalInfoComponent', () => {
     user.address.city = 'Camelot';
     user.address.department = 35;
     user.email = 'perceval.legallois@camelot.bzh';
-    user.socials = [
-      { type: SocialType.TWITTER, url: 'https://twitter.com/PercevalLeGallois' },
-      { type: SocialType.FLICKR, url: 'https://www.flickr.com/people/123456789@N12/' }
-    ];
+
+    const twitter = new Social();
+    twitter.type = SocialType.TWITTER;
+    twitter.url = 'https://twitter.com/PercevalLeGallois';
+
+    const flickr = new Social();
+    flickr.type = SocialType.FLICKR;
+    flickr.url = 'https://www.flickr.com/people/123456789@N12/';
+
+    user.socials = [ twitter, flickr ];
     component.user = user;
     fixture.detectChanges();
 
