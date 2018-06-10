@@ -29,6 +29,7 @@
     *ngFor="let social of user.socials"
     [href]="social.url"
     target="_blank"
+    rel="noopener"
     data-info="social"
   >
     <mat-icon fontSet="fab" fontIcon="fa-{{ social.type }}"></mat-icon>
