@@ -28,6 +28,7 @@
   <a
     *ngFor="let social of user.socials"
     [href]="social.url"
+    [attr.aria-label]="social.aria"
     target="_blank"
     rel="noopener"
     data-info="social"

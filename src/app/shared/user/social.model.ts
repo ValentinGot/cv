@@ -16,4 +16,20 @@ export class Social {
   @JsonProperty('url', String)
   url: string | undefined = undefined;
 
+  get aria () {
+    switch (this.type) {
+      case SocialType.TWITTER:
+        return 'Twitter';
+
+      case SocialType.LINKED_IN:
+        return 'LinkedIn';
+
+      case SocialType.GITHUB:
+        return 'GitHub';
+
+      case SocialType.FLICKR:
+        return 'Flickr';
+    }
+  }
+
 }
