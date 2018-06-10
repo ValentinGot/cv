@@ -22,7 +22,7 @@ cache:
   directories:
   - "$HOME/.npm"
 script:
-    - npm run test
+    - npm run test -- --watch false
 branches:
   only:
     - develop
