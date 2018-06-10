@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material';
+import { By } from '@angular/platform-browser';
 
 import { PersonalInfoComponent } from './personal-info.component';
 import { User } from '../shared/user/user.model';
@@ -70,7 +70,7 @@ describe('PersonalInfoComponent', () => {
 
     const ageEl = fixture.debugElement.query(By.css('[data-info="age"]')).nativeElement;
 
-    expect(ageEl.textContent).toContain('35 ans');
+    expect(ageEl.textContent).toContain('36 ans');
 
     // -----------------------------------
 
