@@ -1,10 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatIconModule, MatTooltipModule } from '@angular/material';
+import { By } from '@angular/platform-browser';
 
 import { SkillsComponent } from './skills.component';
 import { SkillComponent } from './skill/skill.component';
 import { Skill } from './skill.model';
-import { By } from '@angular/platform-browser';
 
 describe ('SkillsComponent', () => {
   let component: SkillsComponent;
@@ -42,8 +42,7 @@ describe ('SkillsComponent', () => {
     secondarySkill.level = 6;
     secondarySkill.main = false;
 
-    component.mainSkills = [ mainSkill ];
-    component.secondarySkills = [ secondarySkill ];
+    component.skills = [ mainSkill, secondarySkill ];
 
     fixture.detectChanges();
 
