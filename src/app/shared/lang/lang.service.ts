@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, Subject } from 'rxjs';
+import { TranslateService } from '@ngx-translate/core';
+import { Observable, Subject } from 'rxjs';
 import { startWith } from 'rxjs/operators';
 
 import { SharedModule } from '../shared.module';
@@ -10,9 +11,13 @@ import { Lang } from './lang.model';
 })
 export class LangService {
   public static LANG_KEY = 'lang';
-  private static DEFAULT_LANG = 'fr';
+  public static DEFAULT_LANG = 'fr';
 
   private langObserver: Subject<string> = new Subject<string>();
+
+  constructor (
+    private translate: TranslateService
+  ) { }
 
   public get langChange (): Observable<string> {
     return this.langObserver.pipe(
@@ -22,6 +27,7 @@ export class LangService {
 
   public setLang (lang: string): void {
     localStorage.setItem(LangService.LANG_KEY, lang);
+    this.translate.use(lang);
 
     this.langObserver.next(lang);
   }
@@ -32,8 +38,8 @@ export class LangService {
 
   public fetch (): Lang[] {
     return [
-      { flag: 'flag:fr', lang: 'fr' },
-      { flag: 'flag:gb', lang: 'en' },
+      { flag: 'flag:fr', lang: 'fr', i18nKey: 'lang.fr' },
+      { flag: 'flag:gb', lang: 'en', i18nKey: 'lang.en' }
     ];
   }
 

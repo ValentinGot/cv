@@ -7,14 +7,14 @@
     [user]="user"
   ></cv-personal-info>
 
-  <cv-title>Compétences</cv-title>
+  <cv-title>{{ 'skill.title' | translate: { count: 2 } }}</cv-title>
 
   <cv-skills
     *ngIf="skills$ | async as skills"
     [skills]="skills"
   ></cv-skills>
 
-  <cv-title>Formation</cv-title>
+  <cv-title>{{ 'training.title' | translate: { count: 1 } }}</cv-title>
 
   <cv-trainings [trainings]="trainings$ | async"></cv-trainings>
 

@@ -1,0 +1,16 @@
+{
+
+  "lang": {
+    "fr": "French",
+    "en": "English"
+  },
+
+  "skill": {
+    "title": "skill{count, plural, =0{} one{} other{s}}"
+  },
+
+  "training": {
+    "title": "training{count, plural, =0{} one{} other{s}}"
+  }
+
+}

@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
+import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
 
 import { UserService } from './shared/user/user.service';
@@ -9,7 +10,6 @@ import { SkillService } from './skills/skill.service';
 import { Skill } from './skills/skill.model';
 import { TrainingService } from './trainings/training.service';
 import { Training } from './trainings/training.model';
-import { Lang } from './shared/lang/lang.model';
 import { LangService } from './shared/lang/lang.service';
 
 @Component({
@@ -28,6 +28,7 @@ export class AppComponent implements OnInit {
     private skillService: SkillService,
     private trainingService: TrainingService,
     private langService: LangService,
+    private translate: TranslateService,
     private sanitizer: DomSanitizer,
     private iconRegistry: MatIconRegistry
   ) { }
@@ -39,8 +40,14 @@ export class AppComponent implements OnInit {
       this.trainings$ = this.trainingService.fetch();
     });
 
+    this.i18nConfiguration();
     this.registerLangIcons();
     this.registerSkillIcons();
+  }
+
+  private i18nConfiguration (): void {
+    this.translate.setDefaultLang(LangService.DEFAULT_LANG);
+    this.translate.use(LangService.DEFAULT_LANG);
   }
 
   private registerLangIcons (): void {

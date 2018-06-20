@@ -39,7 +39,7 @@ describe('LangService', () => {
   describe ('#fetch', () => {
 
     it (`should retrieve an array of languages`, inject ([ LangService ], (service: LangService) => {
-      expect(service.fetch()).toContain({ flag: 'flag:fr', lang: 'fr' });
+      expect(service.fetch()).toContain({ flag: 'flag:fr', lang: 'fr', i18nKey: 'lang.fr' });
     }));
 
   });

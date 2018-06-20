@@ -3,7 +3,7 @@
     data-info="flag"
     *ngIf="lang.lang !== activeLang"
     [svgIcon]="lang.flag"
-    [matTooltip]="lang.lang"
+    [matTooltip]="lang.i18nKey | translate"
     (click)="onSelectLanguage(lang)"
   ></mat-icon>
 </ng-container>
