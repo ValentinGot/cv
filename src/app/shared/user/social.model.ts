@@ -2,7 +2,7 @@ import { JsonObject, JsonProperty } from 'json2typescript';
 
 export enum SocialType {
   TWITTER = 'twitter',
-  LINKED_IN = 'linkedin-in',
+  LINKED_IN = 'linkedin',
   GITHUB = 'github',
   FLICKR = 'flickr'
 }
@@ -15,6 +15,10 @@ export class Social {
 
   @JsonProperty('url', String)
   url: string | undefined = undefined;
+
+  get icon () {
+    return `social:${this.type}`;
+  }
 
   get aria () {
     switch (this.type) {

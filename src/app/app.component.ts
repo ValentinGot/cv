@@ -42,6 +42,7 @@ export class AppComponent implements OnInit {
 
     this.i18nConfiguration();
     this.registerLangIcons();
+    this.registerSocialIcons();
     this.registerSkillIcons();
   }
 
@@ -61,6 +62,30 @@ export class AppComponent implements OnInit {
         'flag',
         'gb',
         this.sanitizer.bypassSecurityTrustResourceUrl('/assets/flag/gb.svg')
+      );
+  }
+
+  private registerSocialIcons (): void {
+    this.iconRegistry
+      .addSvgIconInNamespace(
+        'social',
+        'flickr',
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/social/flickr.svg')
+      )
+      .addSvgIconInNamespace(
+        'social',
+        'github',
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/social/github.svg')
+      )
+      .addSvgIconInNamespace(
+        'social',
+        'linkedin',
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/social/linkedin.svg')
+      )
+      .addSvgIconInNamespace(
+        'social',
+        'twitter',
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/social/twitter.svg')
       );
   }
 
