@@ -1,27 +1,47 @@
 {
   "index": "/index.html",
-  "assetGroups": [{
-    "name": "cv",
-    "installMode": "prefetch",
-    "resources": {
-      "files": [
-        "/favicon.ico",
-        "/index.html"
+  "assetGroups": [
+    {
+      "name": "cv",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html"
+        ],
+        "versionedFiles": [
+          "/*.bundle.css",
+          "/*.bundle.js",
+          "/*.chunk.js"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**"
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/icon?family=Material+Icons",
+          "https://fonts.googleapis.com/css?family=Dosis:300,400,500"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "cv-api",
+      "urls": [
+        "https://valentin-got-cv.firebaseio.com/**"
       ],
-      "versionedFiles": [
-        "/*.bundle.css",
-        "/*.bundle.js",
-        "/*.chunk.js"
-      ]
+      "cacheConfig": {
+        "maxSize": 100000000,
+        "maxAge": "3d",
+        "timeout": "1m"
+      }
     }
-  }, {
-    "name": "assets",
-    "installMode": "lazy",
-    "updateMode": "prefetch",
-    "resources": {
-      "files": [
-        "/assets/**"
-      ]
-    }
-  }]
+  ]
 }
