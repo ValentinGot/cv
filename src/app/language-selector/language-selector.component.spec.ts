@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatIconModule, MatTooltipModule } from '@angular/material';
 import { By } from '@angular/platform-browser';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { LanguageSelectorComponent } from './language-selector.component';
 import { SharedModule } from '../shared/shared.module';
@@ -13,6 +14,7 @@ describe('LanguageSelectorComponent', () => {
   beforeEach (async(() => {
     TestBed.configureTestingModule({
       imports: [
+        TranslateModule.forRoot(),
         MatIconModule,
         MatTooltipModule,
         SharedModule
