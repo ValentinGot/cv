@@ -1,11 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
 import { LangService } from './lang.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('LangService', () => {
 
   beforeEach (() => {
     TestBed.configureTestingModule({
+      imports: [
+        TranslateModule.forRoot()
+      ],
       providers: [ LangService ]
     });
   });
