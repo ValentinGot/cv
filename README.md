@@ -16,20 +16,28 @@
 
 # Work in progress
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+## Built with
 
-## Technos
+<a href="https://angular.io/" target="_blank">
+  <img alt="Angular" height="80px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/angular.svg?raw=true" />
+</a>
+<a href="https://universal.angular.io/" target="_blank">
+  <img alt="Angular Universal" height="80px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/angular-universal.png?raw=true" />
+</a>
+<a href="https://material.angular.io/" target="_blank">
+  <img alt="Angular Material" height="80px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/angular-material.png?raw=true" />
+</a>
+<a href="https://angular.io/guide/service-worker-intro" target="_blank">
+  <img alt="Progressive Web App" height="80px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/pwa.png?raw=true" />
+</a>
+<a href="https://developers.google.com/web/tools/lighthouse/" target="_blank">
+  <img alt="100% Lighthouse" height="80px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/google-lighthouse.png?raw=true" />
+</a>
+<a href="https://firebase.google.com" target="_blank">
+  <img alt="Firebase" height="80px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/firebase.svg?raw=true" />
+</a>
 
-* Angular 6
-* Angular Universal
-* PWA & Service Worker
-* Angular Material
-* Karma
+## Roadmap
 
-Roadmap:
-* 100% lighthouse score
-* Firebase
-* Codecov
-* Cypress
-* Travis
 * Docker
+* Cypress
