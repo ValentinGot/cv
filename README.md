@@ -19,22 +19,27 @@
 ## Built with
 
 <a href="https://angular.io/" target="_blank">
-  <img alt="Angular" height="80px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/angular.svg?raw=true" />
+  <img alt="Angular" height="100px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/angular.png?raw=true" />
 </a>
+&nbsp;
 <a href="https://universal.angular.io/" target="_blank">
-  <img alt="Angular Universal" height="80px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/angular-universal.png?raw=true" />
+  <img alt="Angular Universal" height="100px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/angular-universal.png?raw=true" />
 </a>
+&nbsp;
 <a href="https://material.angular.io/" target="_blank">
-  <img alt="Angular Material" height="80px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/angular-material.png?raw=true" />
+  <img alt="Angular Material" height="100px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/angular-material.png?raw=true" />
 </a>
+&nbsp;
 <a href="https://angular.io/guide/service-worker-intro" target="_blank">
-  <img alt="Progressive Web App" height="80px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/pwa.png?raw=true" />
+  <img alt="Progressive Web App" height="100px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/pwa.png?raw=true" />
 </a>
+&nbsp;
 <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank">
-  <img alt="100% Lighthouse" height="80px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/google-lighthouse.png?raw=true" />
+  <img alt="100% Lighthouse" height="100px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/google-lighthouse.png?raw=true" />
 </a>
+&nbsp;
 <a href="https://firebase.google.com" target="_blank">
-  <img alt="Firebase" height="80px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/firebase.svg?raw=true" />
+  <img alt="Firebase" height="100px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/firebase.png?raw=true" />
 </a>
 
 ## Roadmap
