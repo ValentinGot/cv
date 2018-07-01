@@ -37,7 +37,7 @@ describe ('SkillComponent', () => {
 
   it ('should show the user info', () => {
     const skill = new Skill();
-    skill.icon = 'skill:javascript';
+    skill.icon = 'tech:javascript';
     skill.name = 'JavaScript';
     skill.level = 9.5;
     skill.main = true;
@@ -48,7 +48,7 @@ describe ('SkillComponent', () => {
 
     const iconEl = fixture.debugElement.query(By.css('.mat-icon')).nativeElement;
 
-    expect(iconEl.getAttribute('ng-reflect-svg-icon')).toEqual('skill:javascript');
+    expect(iconEl.getAttribute('ng-reflect-svg-icon')).toEqual('tech:javascript');
 
     // -----------------------------------
 

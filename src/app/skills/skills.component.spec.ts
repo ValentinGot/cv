@@ -31,13 +31,13 @@ describe ('SkillsComponent', () => {
 
   it ('should split main & secondary skills into their respective containers', () => {
     const mainSkill = new Skill();
-    mainSkill.icon = 'skill:javascript';
+    mainSkill.icon = 'tech:javascript';
     mainSkill.name = 'JavaScript';
     mainSkill.level = 9.5;
     mainSkill.main = true;
 
     const secondarySkill = new Skill();
-    secondarySkill.icon = 'skill:ux';
+    secondarySkill.icon = 'tech:ux';
     secondarySkill.name = 'UX / UI';
     secondarySkill.level = 6;
     secondarySkill.main = false;
