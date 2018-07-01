@@ -8,6 +8,8 @@ import { UserService } from './shared/user/user.service';
 import { User } from './shared/user/user.model';
 import { SkillService } from './skills/skill.service';
 import { Skill } from './skills/skill.model';
+import { ExperienceService } from './experiences/experience.service';
+import { Experience } from './experiences/experience.model';
 import { TrainingService } from './trainings/training.service';
 import { Training } from './trainings/training.model';
 import { LangService } from './shared/lang/lang.service';
@@ -21,11 +23,13 @@ import { LangService } from './shared/lang/lang.service';
 export class AppComponent implements OnInit {
   user$: Observable<User>;
   skills$: Observable<Skill[]>;
+  experiences$: Observable<Experience[]>;
   trainings$: Observable<Training[]>;
 
   constructor (
     private userService: UserService,
     private skillService: SkillService,
+    private experienceService: ExperienceService,
     private trainingService: TrainingService,
     private langService: LangService,
     private translate: TranslateService,
@@ -37,6 +41,7 @@ export class AppComponent implements OnInit {
     this.langService.langChange.subscribe(() => {
       this.user$ = this.userService.fetch();
       this.skills$ = this.skillService.fetch();
+      this.experiences$ = this.experienceService.fetch();
       this.trainings$ = this.trainingService.fetch();
     });
 
@@ -52,110 +57,49 @@ export class AppComponent implements OnInit {
   }
 
   private registerLangIcons (): void {
-    this.iconRegistry
-      .addSvgIconInNamespace(
-        'flag',
-        'fr',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/flag/fr.svg')
-      )
-      .addSvgIconInNamespace(
-        'flag',
-        'gb',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/flag/gb.svg')
-      );
+    this.registerIcons('flag', [
+      'fr',
+      'gb'
+    ]);
   }
 
   private registerSocialIcons (): void {
-    this.iconRegistry
-      .addSvgIconInNamespace(
-        'social',
-        'flickr',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/social/flickr.svg')
-      )
-      .addSvgIconInNamespace(
-        'social',
-        'github',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/social/github.svg')
-      )
-      .addSvgIconInNamespace(
-        'social',
-        'linkedin',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/social/linkedin.svg')
-      )
-      .addSvgIconInNamespace(
-        'social',
-        'twitter',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/social/twitter.svg')
-      );
+    this.registerIcons('social', [
+      'flickr',
+      'github',
+      'linkedin',
+      'twitter'
+    ]);
   }
 
   private registerTechIcons (): void {
-    this.iconRegistry
-      .addSvgIconInNamespace(
-        'tech',
-        'javascript',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/javascript.svg')
-      )
-      .addSvgIconInNamespace(
-        'tech',
-        'typescript',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/typescript.svg')
-      )
-      .addSvgIconInNamespace(
-        'tech',
-        'css',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/css.svg')
-      )
-      .addSvgIconInNamespace(
-        'tech',
-        'angular',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/angular.svg')
-      )
-      .addSvgIconInNamespace(
-        'tech',
-        'nodejs',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/nodejs.svg')
-      )
-      .addSvgIconInNamespace(
-        'tech',
-        'responsive',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/responsive.svg')
-      )
-      .addSvgIconInNamespace(
-        'tech',
-        'ux',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/ux.svg')
-      )
-      .addSvgIconInNamespace(
-        'tech',
-        'git',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/git.svg')
-      )
-      .addSvgIconInNamespace(
-        'tech',
-        'sass',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/sass.svg')
-      )
-      .addSvgIconInNamespace(
-        'tech',
-        'vuejs',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/vuejs.svg')
-      )
-      .addSvgIconInNamespace(
-        'tech',
-        'mongodb',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/mongodb.svg')
-      )
-      .addSvgIconInNamespace(
-        'tech',
-        'sails',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/sails.svg')
-      )
-      .addSvgIconInNamespace(
-        'tech',
-        'webstorm',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/webstorm.svg')
+    this.registerIcons('tech', [
+      'javascript',
+      'typescript',
+      'css',
+      'angular',
+      'nodejs',
+      'responsive',
+      'ux',
+      'git',
+      'sass',
+      'vuejs',
+      'mongodb',
+      'sails',
+      'webstorm',
+      'webrtc',
+      'svn'
+    ]);
+  }
+
+  private registerIcons (namespace: string, icons: string[]): void {
+    for (const icon of icons) {
+      this.iconRegistry.addSvgIconInNamespace(
+        namespace,
+        icon,
+        this.sanitizer.bypassSecurityTrustResourceUrl(`/assets/${namespace}/${icon}.svg`)
       );
+    }
   }
 
 }
