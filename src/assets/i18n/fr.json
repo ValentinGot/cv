@@ -9,6 +9,10 @@
     "title": "compétence{count, plural, =0{} one{} other{s}}"
   },
 
+  "experience": {
+    "title": "expérience{count, plural, =0{} one{} other{s}}"
+  },
+
   "training": {
     "title": "formation{count, plural, =0{} one{} other{s}}"
   }

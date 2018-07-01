@@ -20,6 +20,8 @@ import { TrainingsComponent } from './trainings/trainings.component';
 import { TrainingComponent } from './trainings/training/training.component';
 import { GithubCornerComponent } from './github-corner/github-corner.component';
 import { LanguageSelectorComponent } from './language-selector/language-selector.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { ExperienceComponent } from './experiences/experience/experience.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory (http: HttpClient) {
@@ -57,7 +59,9 @@ export function HttpLoaderFactory (http: HttpClient) {
     TrainingsComponent,
     TrainingComponent,
     GithubCornerComponent,
-    LanguageSelectorComponent
+    LanguageSelectorComponent,
+    ExperiencesComponent,
+    ExperienceComponent
   ],
   bootstrap: [ AppComponent ]
 })

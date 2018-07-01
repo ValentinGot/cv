@@ -14,6 +14,13 @@
     [skills]="skills"
   ></cv-skills>
 
+  <cv-title>{{ 'experience.title' | translate: { count: 2 } }}</cv-title>
+
+  <cv-experiences
+    *ngIf="experiences$ | async as experiences"
+    [experiences]="experiences"
+  ></cv-experiences>
+
   <cv-title>{{ 'training.title' | translate: { count: 1 } }}</cv-title>
 
   <cv-trainings [trainings]="trainings$ | async"></cv-trainings>

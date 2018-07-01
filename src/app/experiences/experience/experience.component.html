@@ -1,0 +1,50 @@
+<div class="row">
+  <p class="name" data-info="name">{{ experience.name }}</p>
+
+  <div class="wrapper">
+    <p class="time" data-info="time">
+      <mat-icon>today</mat-icon>
+      {{ experience.time }}
+    </p>
+
+    <p class="location" data-info="location">
+      <mat-icon>place</mat-icon>
+      {{ experience.location }}
+    </p>
+  </div>
+</div>
+
+<p class="description" data-info="description">{{ experience.description }}</p>
+
+<div class="technologies">
+  <ng-container *ngFor="let technology of experience.technologies">
+    <a
+      class="icon-wrapper"
+      *ngIf="technology.url"
+      [href]="technology.url"
+      target="_blank"
+      rel="noopener"
+    >
+      <mat-icon
+        [svgIcon]="technology.icon"
+        [matTooltip]="technology.name"
+        matTooltipPosition="above"
+      >
+        {{ technology }}
+      </mat-icon>
+    </a>
+
+    <span
+      class="icon-wrapper"
+      *ngIf="!technology.url"
+    >
+      <mat-icon
+        [svgIcon]="technology.icon"
+        [matTooltip]="technology.name"
+        matTooltipPosition="above"
+      >
+        {{ technology }}
+      </mat-icon>
+    </span>
+  </ng-container>
+</div>
