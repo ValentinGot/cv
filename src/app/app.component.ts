@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
     this.i18nConfiguration();
     this.registerLangIcons();
     this.registerSocialIcons();
-    this.registerSkillIcons();
+    this.registerTechIcons();
   }
 
   private i18nConfiguration (): void {
@@ -89,57 +89,72 @@ export class AppComponent implements OnInit {
       );
   }
 
-  private registerSkillIcons (): void {
+  private registerTechIcons (): void {
     this.iconRegistry
       .addSvgIconInNamespace(
-        'skill',
+        'tech',
         'javascript',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/skill/javascript.svg')
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/javascript.svg')
       )
       .addSvgIconInNamespace(
-        'skill',
+        'tech',
         'typescript',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/skill/typescript.svg')
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/typescript.svg')
       )
       .addSvgIconInNamespace(
-        'skill',
+        'tech',
         'css',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/skill/css.svg')
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/css.svg')
       )
       .addSvgIconInNamespace(
-        'skill',
+        'tech',
         'angular',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/skill/angular.svg')
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/angular.svg')
       )
       .addSvgIconInNamespace(
-        'skill',
+        'tech',
         'nodejs',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/skill/nodejs.svg')
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/nodejs.svg')
       )
       .addSvgIconInNamespace(
-        'skill',
+        'tech',
         'responsive',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/skill/responsive.svg')
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/responsive.svg')
       )
       .addSvgIconInNamespace(
-        'skill',
+        'tech',
         'ux',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/skill/ux.svg')
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/ux.svg')
       )
       .addSvgIconInNamespace(
-        'skill',
+        'tech',
         'git',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/skill/git.svg')
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/git.svg')
       )
       .addSvgIconInNamespace(
-        'skill',
+        'tech',
         'sass',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/skill/sass.svg')
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/sass.svg')
       )
       .addSvgIconInNamespace(
-        'skill',
+        'tech',
         'vuejs',
-        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/skill/vuejs.svg')
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/vuejs.svg')
+      )
+      .addSvgIconInNamespace(
+        'tech',
+        'mongodb',
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/mongodb.svg')
+      )
+      .addSvgIconInNamespace(
+        'tech',
+        'sails',
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/sails.svg')
+      )
+      .addSvgIconInNamespace(
+        'tech',
+        'webstorm',
+        this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tech/webstorm.svg')
       );
   }
 
