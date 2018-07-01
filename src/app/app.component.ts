@@ -88,7 +88,9 @@ export class AppComponent implements OnInit {
       'sails',
       'webstorm',
       'webrtc',
-      'svn'
+      'svn',
+      'clea',
+      'pwa'
     ]);
   }
 
