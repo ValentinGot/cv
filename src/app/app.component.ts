@@ -90,7 +90,13 @@ export class AppComponent implements OnInit {
       'webrtc',
       'svn',
       'clea',
-      'pwa'
+      'pwa',
+      'd3js',
+      'sublimetext',
+      'less',
+      'zend',
+      'php',
+      'webpack'
     ]);
   }
 

@@ -2,14 +2,12 @@
  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
 
  <g>
-  <title>background</title>
   <rect x="-1" y="-1" width="384" height="352" id="canvas_background" fill="none"/>
   <g id="canvasGrid" display="none">
    <rect id="svg_1" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
   </g>
  </g>
  <g>
-  <title>Layer 1</title>
   <ellipse fill="#ffffff" class="icon-cls" stroke-width="0" cx="190" cy="79" id="svg_6" rx="77" ry="77" stroke="#000"/>
   <ellipse fill="#ffffff" class="icon-cls" stroke-width="0" cx="300" cy="156" id="svg_7" rx="77" ry="77" stroke="#000"/>
   <ellipse fill="#ffffff" class="icon-cls" stroke-width="0" cx="255" cy="269" id="svg_8" rx="77" ry="77" stroke="#000"/>
