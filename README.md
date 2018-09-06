@@ -2,6 +2,14 @@
   <a href="https://cv.valentin-got.fr/" target="_blank" rel="noopener">
     <img alt="Valentin GOT" src="https://github.com/ValentinGot/cv/blob/develop/src/assets/launcher/launcher-256x256.png?raw=true" />
   </a>
+</p>
+
+<p align="center"><a href="https://cv.valentin-got.fr/" target="_blank">Personal resume</a></p>
+
+<p align="center">
+  <a href="https://travis-ci.org/ValentinGot/cv">
+    <img alt="Travis CI Build Status" src="https://travis-ci.org/ValentinGot/cv.svg?branch=develop" />
+  </a>
   <a href="https://github.com/ebidel/lighthouse-badge" target="_blank" rel="noopener">
     <img alt="Lighthouse Perf score: 70/100" src="https://lighthouse-badge.appspot.com/?score=100&compact&category=Perf" />
   </a>
@@ -14,12 +22,6 @@
   <a href="https://github.com/ebidel/lighthouse-badge" target="_blank" rel="noopener">
     <img alt="Lighthouse SEO score: 89/100" src="https://lighthouse-badge.appspot.com/?score=89&compact&category=SEO" />
   </a>
-</p>
-
-<p align="center"><a href="https://cv.valentin-got.fr/" target="_blank">Personal resume</a></p>
-
-<p align="center">
-  <a href="https://travis-ci.org/ValentinGot/cv"><img alt="Travis CI Build Status" src="https://travis-ci.org/ValentinGot/cv.svg?branch=develop"></a>
 </p>
 
 ---
