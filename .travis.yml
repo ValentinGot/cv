@@ -4,25 +4,39 @@ sudo: required
 dist: trusty
 language: node_js
 node_js:
-  - "8"
-  - "9"
-  - "10"
+  - '8'
+  - '9'
+  - '10'
 before_install:
   - export CHROME_BIN=/usr/bin/google-chrome
-  - export DISPLAY=:99.0
+  - 'export DISPLAY=:99.0'
   - sh -e /etc/init.d/xvfb start
   - sudo apt-get update
   - sudo apt-get install -y libappindicator1 fonts-liberation
-  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - >-
+    wget
+    https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   - sudo dpkg -i google-chrome*.deb
 install:
-    - npm install npm@latest -g
-    - npm ci
+  - npm install npm@latest -g
+  - npm ci
 cache:
   directories:
-  - "$HOME/.npm"
+    - $HOME/.npm
+    - node_modules
 script:
-    - npm run test -- --watch false --progress false
+  - npm run build
+  - npm run test -- --watch false --progress false
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  'on':
+    node: '10'
+
 branches:
   only:
     - develop
+env:
+  global:
+    # Token Firebase
+    - secure: SnSESY+BlzjK7ubPBj5NpcAYLDbZdZkWG81pWHUCEJXP5nZ3vx++X90kz8TJAzCBonz+5Dr+EofLibQ8iFGyYWggf2Ze2F7ZoDaXDItLXAEQJiwRvDIo9RH0yfCqbN6uLWimHFtbx/htscecryucFiW8CjTDYHgbD/TscY0lUV8W+N0S6XjGrB1v2kEJLO+6Q/nBSYrn1UFVzown1VR2a4D/FH7E6WaBpp4+EfFa8B15Kozp4dcKhTSzGa0xcigbqDSajQ8mshqmf3RmGCVSkbi12v/tRH6+TBAfF7At1X0mTs7DPBIOfba80ZC5bhfiWBLOxXdIDM3gL9V7RLrV19Hhr/LSZNNZhv+drR6RI1XzkRaGCEvaDGHJ9ggcN3AA835hCHV5YFW1BJrDgUDb4lc9EhJ2ca2G1T8ITetMhRsxssVUxzlj+Nff4nvlDxQHyeWwlDr+WzMw8tuAXXhXUAKxRd5eR5Y4ebLhrhKQhwektVT1ZbH/bxql7FgtTz8E7axOR+QQ3MVWgXEB7HCKuozsPHwqI9DkQu9rDGO3MWqJjHPWolxjtm5m7xhHZ2ekAynN1rJRKDG16eJ2fo8rKvOX12rXpZDM+ObFZjJFBIfFDMzMYEYM7DLHZFGC8hBqKG54egZm4wNNkykLlvvLDY1zFvycJq5M6yk/Wdas3u8=
