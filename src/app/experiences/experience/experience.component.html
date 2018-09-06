@@ -22,6 +22,7 @@
       class="icon-wrapper"
       *ngIf="technology.url"
       [href]="technology.url"
+      [attr.aria-label]="technology.name"
       target="_blank"
       rel="noopener"
     >
@@ -37,6 +38,7 @@
     <span
       class="icon-wrapper"
       *ngIf="!technology.url"
+      [attr.aria-label]="technology.name"
     >
       <mat-icon
         [svgIcon]="technology.icon"
