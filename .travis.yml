@@ -34,6 +34,9 @@ script:
   - npm run build -- --progress false
   - npm run test -- --watch false --progress false
 
+after_success:
+  - npm run codecov
+
 deploy:
   skip_cleanup: true
   provider: script

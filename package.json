@@ -14,7 +14,8 @@
     "e2e": "ng e2e",
     "serve:ssr": "node dist/server",
     "serve:firebase": "firebase serve --only hosting,functions",
-    "deploy:firebase": "firebase deploy --only hosting"
+    "deploy:firebase": "firebase deploy --only hosting",
+    "codecov": "codecov"
   },
   "private": true,
   "dependencies": {
@@ -53,6 +54,7 @@
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~8.9.4",
+    "codecov": "^3.1.0",
     "codelyzer": "^4.4.4",
     "del": "^3.0.0",
     "express": "^4.16.3",
