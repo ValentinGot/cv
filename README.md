@@ -13,6 +13,9 @@
   <a href="https://github.com/ebidel/lighthouse-badge" target="_blank" rel="noopener">
     <img alt="Lighthouse Perf score: 70/100" src="https://lighthouse-badge.appspot.com/?score=70&compact&category=Perf" />
   </a>
+  <a href="https://david-dm.org/ValentinGot/cv" target="_blank" rel="noopener">
+    <img alt="Dependencies status" src="https://david-dm.org/ValentinGot/cv.svg" />
+  </a>
   <a href="https://github.com/ebidel/lighthouse-badge" target="_blank" rel="noopener">
     <img alt="Lighthouse PWA score: 100/100" src="https://lighthouse-badge.appspot.com/?score=100&compact&category=PWA" />
   </a>
