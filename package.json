@@ -15,7 +15,7 @@
     "serve:ssr": "node dist/server",
     "serve:firebase": "firebase serve --only hosting,functions",
     "deploy:firebase": "firebase deploy --only hosting",
-    "codecov": "codecov --file coverage/lcov.info"
+    "codecov": "codecov -f coverage/lcov.info"
   },
   "private": true,
   "dependencies": {

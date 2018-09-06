@@ -61,8 +61,3 @@
 <a href="https://firebase.google.com" target="_blank">
   <img alt="Firebase" height="100px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/firebase.png?raw=true" />
 </a>
-
-## Roadmap
-
-* Docker
-* Cypress
