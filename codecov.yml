@@ -1,5 +1,5 @@
 coverage:
   ignore:
-    - 'src/polyfill.ts'
+    - 'src/polyfills.ts'
     - 'src/test.ts'
-    - 'src/environment.ts'
+    - 'src/environment/environment.ts'
