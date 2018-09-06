@@ -2,11 +2,16 @@ os:
   - linux
 sudo: required
 dist: trusty
+
 language: node_js
 node_js:
   - '8'
   - '9'
   - '10'
+
+branches:
+  only:
+  - develop
 
 before_install:
   - export CHROME_BIN=/usr/bin/google-chrome
@@ -31,11 +36,8 @@ script:
 
 deploy:
   skip_cleanup: true
-  provider: firebase
+  provider: script
+  script: npm run deploy:firebase -- --token $FIREBASE_TOKEN --non-interactive
   on:
     branch: 'develop'
     node: '10'
-
-branches:
-  only:
-    - develop
