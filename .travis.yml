@@ -36,6 +36,8 @@ script:
 
 after_success:
   - npm run codecov
+  on:
+    node: '10'
 
 deploy:
   skip_cleanup: true
