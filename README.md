@@ -7,7 +7,7 @@
 <p align="center"><a href="https://cv.valentin-got.fr/" target="_blank">Personal resume</a></p>
 
 <p align="center">
-  <a href="https://travis-ci.org/ValentinGot/cv"><img alt="Travis CI Build Status" src="https://travis-ci.org/ValentinGot/cv?branch=develop"></a>
+  <a href="https://travis-ci.org/ValentinGot/cv"><img alt="Travis CI Build Status" src="https://travis-ci.org/ValentinGot/cv.svg?branch=develop"></a>
 </p>
 
 ---
