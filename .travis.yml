@@ -32,7 +32,7 @@ cache:
 
 script:
   - npm run build -- --progress false
-  - npm run test -- --watch false --progress false
+  - npm run test -- --watch false --progress false --code-coverage
 
 after_success:
   - npm run codecov
