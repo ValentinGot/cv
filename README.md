@@ -17,7 +17,7 @@
     <img src="https://codecov.io/gh/ValentinGot/cv/branch/develop/graph/badge.svg" />
   </a>
   <a href="https://github.com/ebidel/lighthouse-badge" target="_blank" rel="noopener">
-    <img alt="Lighthouse Perf score: 70/100" src="https://lighthouse-badge.appspot.com/?score=70&compact&category=Perf" />
+    <img alt="Lighthouse Perf score: 90/100" src="https://lighthouse-badge.appspot.com/?score=90&compact&category=Perf" />
   </a>
   <a href="https://github.com/ebidel/lighthouse-badge" target="_blank" rel="noopener">
     <img alt="Lighthouse PWA score: 100/100" src="https://lighthouse-badge.appspot.com/?score=100&compact&category=PWA" />
@@ -26,7 +26,7 @@
     <img alt="Lighthouse Accessbility score: 100/100" src="https://lighthouse-badge.appspot.com/?score=100&compact&category=Accessbility" />
   </a>
   <a href="https://github.com/ebidel/lighthouse-badge" target="_blank" rel="noopener">
-    <img alt="Lighthouse SEO score: 89/100" src="https://lighthouse-badge.appspot.com/?score=89&compact&category=SEO" />
+    <img alt="Lighthouse SEO score: 90/100" src="https://lighthouse-badge.appspot.com/?score=90&compact&category=SEO" />
   </a>
 </p>
 
