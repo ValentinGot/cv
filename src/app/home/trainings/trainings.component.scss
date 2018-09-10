@@ -1,0 +1,57 @@
+//----------------------------------------
+//  Trainings
+//----------------------------------------
+
+@import '../../../css/abstracts/colors';
+@import '../../../css/abstracts/break-points';
+@import '../../../css/abstracts/mixins';
+
+//----------------------------------------
+
+:host {
+  display: block;
+  padding: 20px 0;
+
+  .trainings-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    cv-training {
+      margin: 0 0 16px;
+
+      // First child because we reversed the items with `flex-direction: column-reverse`
+      &:first-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        &:after {
+          height: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+  @include breakpoint($bp-gt-xs) {
+    padding: 45px 0 20px;
+
+    .trainings-container {
+      position: relative;
+      flex-direction: row;
+      justify-content: center;
+
+      &:before {
+        position: absolute;
+        top: 13px;
+        content: '';
+        width: 100%;
+        border-top: 4px dotted $secondary-color;
+      }
+
+    }
+
+  }
+
+}

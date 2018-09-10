@@ -1,0 +1,40 @@
+//----------------------------------------
+//  Home
+//----------------------------------------
+
+@import '../../css/abstracts/break-points';
+@import '../../css/abstracts/colors';
+
+//----------------------------------------
+
+:host {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 12px;
+  padding: 40px 0 0;
+  border: 4px dotted $divider-color;
+
+  main {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  @include breakpoint($bp-gt-xs) {
+    padding: 60px 0 0;
+  }
+
+  @include breakpoint($bp-gt-md) {
+
+    main {
+      width: 500px;
+    }
+
+  }
+
+  @media print {
+    padding: 0;
+    border: none;
+  }
+
+}

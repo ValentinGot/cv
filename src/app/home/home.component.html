@@ -1,0 +1,34 @@
+<cv-language-selector></cv-language-selector>
+
+<main>
+
+  <cv-personal-info
+    *ngIf="user"
+    [user]="user"
+  ></cv-personal-info>
+
+  <ng-container *ngIf="skills">
+    <cv-title>{{ 'skill.title' | translate: { count: 2 } }}</cv-title>
+
+    <cv-skills
+      [skills]="skills"
+    ></cv-skills>
+  </ng-container>
+
+  <ng-container *ngIf="experiences">
+    <cv-title>{{ 'experience.title' | translate: { count: 2 } }}</cv-title>
+
+    <cv-experiences
+      [experiences]="experiences"
+    ></cv-experiences>
+  </ng-container>
+
+  <ng-container *ngIf="trainings">
+    <cv-title>{{ 'training.title' | translate: { count: 1 } }}</cv-title>
+
+    <cv-trainings [trainings]="trainings"></cv-trainings>
+  </ng-container>
+
+</main>
+
+<cv-github-corner url="https://github.com/ValentinGot/cv"></cv-github-corner>

@@ -1,20 +1,9 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { MatIconRegistry, MatSnackBar, MatSnackBarRef } from '@angular/material';
+import { MatIconRegistry } from '@angular/material';
 import { TranslateService } from '@ngx-translate/core';
-import { forkJoin, Observable } from 'rxjs';
-import { mergeMap, switchMap, tap } from 'rxjs/operators';
 
-import { UserService } from './shared/user/user.service';
-import { User } from './shared/user/user.model';
-import { SkillService } from './skills/skill.service';
-import { Skill } from './skills/skill.model';
-import { ExperienceService } from './experiences/experience.service';
-import { Experience } from './experiences/experience.model';
-import { TrainingService } from './trainings/training.service';
-import { Training } from './trainings/training.model';
-import { LangService } from './shared/lang/lang.service';
-import { LoadingSnackBarComponent } from './shared/loading-snackbar/loading-snackbar.component';
+import { LangService } from './core/lang/lang.service';
 
 @Component({
   selector: 'cv-root',
@@ -23,50 +12,15 @@ import { LoadingSnackBarComponent } from './shared/loading-snackbar/loading-snac
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit {
-  user: User;
-  skills: Skill[];
-  experiences: Experience[];
-  trainings: Training[];
-  snackBarRef: MatSnackBarRef<LoadingSnackBarComponent>;
 
   constructor (
-    private userService: UserService,
-    private skillService: SkillService,
-    private experienceService: ExperienceService,
-    private trainingService: TrainingService,
     private langService: LangService,
     private translate: TranslateService,
     private sanitizer: DomSanitizer,
-    private snackBar: MatSnackBar,
-    private iconRegistry: MatIconRegistry,
-    private cd: ChangeDetectorRef
+    private iconRegistry: MatIconRegistry
   ) { }
 
   ngOnInit () {
-    this.langService.langChange.pipe(
-      tap(() => this.snackBarRef = this.snackBar.openFromComponent(LoadingSnackBarComponent, {
-        horizontalPosition: 'start'
-      })),
-      switchMap(() => this.userService.fetch()),
-      mergeMap((user: User) => {
-        this.user = user;
-        this.cd.markForCheck();
-
-        return forkJoin(
-          this.skillService.fetch(),
-          this.experienceService.fetch(),
-          this.trainingService.fetch()
-        );
-      })
-    ).subscribe(([ skills, experiences, trainings ]: [ Skill[], Experience[], Training[] ]) => {
-      this.skills = skills;
-      this.experiences = experiences;
-      this.trainings = trainings;
-
-      this.snackBarRef.dismiss();
-      this.cd.markForCheck();
-    });
-
     this.i18nConfiguration();
     this.registerLangIcons();
     this.registerSocialIcons();

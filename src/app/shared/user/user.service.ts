@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { map, switchMap } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 import { JsonConvert } from 'json2typescript';
 
 import { SharedModule } from '../shared.module';
 import { User } from './user.model';
 import { environment } from '../../../environments/environment';
-import { LangService } from '../lang/lang.service';
+import { LangService } from '../../core/lang/lang.service';
 
 @Injectable({
   providedIn: SharedModule

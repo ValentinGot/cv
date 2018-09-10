@@ -1,6 +1,6 @@
 import { JsonObject, JsonProperty } from 'json2typescript';
 
-import { DateConverter } from '../date.converter';
+import { DateConverter } from '../../core/date.converter';
 import { Address } from './address.model';
 import { Social } from './social.model';
 
