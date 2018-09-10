@@ -5,6 +5,10 @@
     "en": "English"
   },
 
+  "app": {
+    "loading": "Loading"
+  },
+
   "skill": {
     "title": "skill{count, plural, =0{} one{} other{s}}"
   },

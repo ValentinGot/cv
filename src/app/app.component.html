@@ -1,30 +1,34 @@
 <cv-language-selector></cv-language-selector>
 
-<div class="container">
+<main>
 
   <cv-personal-info
-    *ngIf="user$ | async as user"
+    *ngIf="user"
     [user]="user"
   ></cv-personal-info>
 
-  <cv-title>{{ 'skill.title' | translate: { count: 2 } }}</cv-title>
+  <ng-container *ngIf="skills">
+    <cv-title>{{ 'skill.title' | translate: { count: 2 } }}</cv-title>
 
-  <cv-skills
-    *ngIf="skills$ | async as skills"
-    [skills]="skills"
-  ></cv-skills>
+    <cv-skills
+      [skills]="skills"
+    ></cv-skills>
+  </ng-container>
 
-  <cv-title>{{ 'experience.title' | translate: { count: 2 } }}</cv-title>
+  <ng-container *ngIf="experiences">
+    <cv-title>{{ 'experience.title' | translate: { count: 2 } }}</cv-title>
 
-  <cv-experiences
-    *ngIf="experiences$ | async as experiences"
-    [experiences]="experiences"
-  ></cv-experiences>
+    <cv-experiences
+      [experiences]="experiences"
+    ></cv-experiences>
+  </ng-container>
 
-  <cv-title>{{ 'training.title' | translate: { count: 1 } }}</cv-title>
+  <ng-container *ngIf="trainings">
+    <cv-title>{{ 'training.title' | translate: { count: 1 } }}</cv-title>
 
-  <cv-trainings [trainings]="trainings$ | async"></cv-trainings>
+    <cv-trainings [trainings]="trainings"></cv-trainings>
+  </ng-container>
 
-</div>
+</main>
 
 <cv-github-corner url="https://github.com/ValentinGot/cv"></cv-github-corner>

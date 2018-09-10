@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { TransferHttpCacheModule } from '@nguniversal/common';
-import { MatIconModule, MatTooltipModule } from '@angular/material';
+import { MatIconModule, MatSnackBarModule, MatTooltipModule } from '@angular/material';
 import { TranslateCompiler, TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateMessageFormatCompiler } from 'ngx-translate-messageformat-compiler';
@@ -48,6 +48,7 @@ export function HttpLoaderFactory (http: HttpClient) {
     }),
     MatIconModule,
     MatTooltipModule,
+    MatSnackBarModule,
     SharedModule
   ],
   declarations: [

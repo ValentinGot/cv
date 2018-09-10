@@ -1,0 +1,17 @@
+//----------------------------------------
+//  Loading SnackBar
+//----------------------------------------
+
+:host {
+  display: flex;
+
+  .mat-spinner {
+    margin-right: 16px;
+
+    ::ng-deep circle {
+      stroke: #FFFFFF;
+    }
+
+  }
+
+}
