@@ -24,4 +24,8 @@
 
   }
 
+  @media print {
+    display: none;
+  }
+
 }
