@@ -1,4 +1,14 @@
-// TODO: Make it responsive
+
+//----------------------------------------
+//  Not Found
+//----------------------------------------
+
+// TODO: Make the "404" responsive
+
+@import '../../../css/abstracts/break-points';
+
+//----------------------------------------
+
 :host {
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
 
@@ -14,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-top: 24px;
     color: #FFFFFF;
 
     p {
@@ -21,7 +32,7 @@
     }
 
     div {
-      width: 400px;
+      width: 140px;
       height: 5px;
       margin-bottom: 16px;
       border-radius: 4px;
@@ -29,23 +40,23 @@
     }
 
     .p1 {
-      font-size: 200px;
+      font-size: 100px;
       text-transform: uppercase;
     }
 
     .p2 {
-      font-size: 42px;
+      font-size: 30px;
     }
 
     .p3 {
-      font-size: 27px;
+      font-size: 19px;
     }
 
     .go-back {
-      width: 400px;
+      width: 360px;
       margin-top: 28px;
-      padding: 16px 0;
-      font-size: 26px;
+      padding: 8px 0;
+      font-size: 20px;
       color: #1B6951;
       background-color: rgba(255, 255, 255, .7);
       text-align: center;
@@ -61,6 +72,7 @@
   }
 
   .txt-404 {
+    display: none;
     position: absolute;
     bottom: 87px;
     left: 575px;
@@ -71,6 +83,41 @@
     font-weight: 800;
     text-shadow: 0 0 15px rgba(0, 0, 0, .3);
     transform: rotate(26deg);
+  }
+
+  @include breakpoint($bp-gt-xs) {
+
+    .message {
+      padding-top: 0;
+
+      div {
+        width: 320px;
+      }
+
+      .p1 {
+        font-size: 200px;
+      }
+
+      .p2 {
+        font-size: 42px;
+      }
+
+      .p3 {
+        font-size: 27px;
+      }
+
+      .go-back {
+        width: 400px;
+        padding: 16px 0;
+        font-size: 26px;
+      }
+
+    }
+
+    .txt-404 {
+      display: block;
+    }
+
   }
 
 }
