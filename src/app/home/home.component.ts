@@ -1,8 +1,11 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { MatSnackBar, MatSnackBarRef } from '@angular/material';
+import { forkJoin } from 'rxjs';
 import { mergeMap, switchMap, tap } from 'rxjs/operators';
+
 import { LoadingSnackBarComponent } from '../shared/loading-snackbar/loading-snackbar.component';
 import { User } from '../shared/user/user.model';
-import { forkJoin } from 'rxjs/internal/observable/forkJoin';
 import { Skill } from './skills/skill.model';
 import { Experience } from './experiences/experience.model';
 import { Training } from './trainings/training.model';
@@ -11,7 +14,6 @@ import { SkillService } from './skills/skill.service';
 import { ExperienceService } from './experiences/experience.service';
 import { TrainingService } from './trainings/training.service';
 import { LangService } from '../core/lang/lang.service';
-import { MatSnackBar, MatSnackBarRef } from '@angular/material';
 
 @Component({
   selector: 'cv-home',
@@ -27,6 +29,7 @@ export class HomeComponent implements OnInit {
   snackBarRef: MatSnackBarRef<LoadingSnackBarComponent>;
 
   constructor (
+    private titleService: Title,
     private userService: UserService,
     private skillService: SkillService,
     private experienceService: ExperienceService,
@@ -37,6 +40,8 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit () {
+    this.titleService.setTitle('Valentin Got · Front end engineer / Lead developer · Rennes · CV');
+
     this.langService.langChange.pipe(
       tap(() => this.snackBarRef = this.snackBar.openFromComponent(LoadingSnackBarComponent, {
         horizontalPosition: 'start'
