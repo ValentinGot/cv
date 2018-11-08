@@ -5,7 +5,6 @@ import { map } from 'rxjs/operators';
 import { JsonConvert } from 'json2typescript';
 
 import { Skill } from './skill.model';
-import { LangService } from '../../core/lang/lang.service';
 import { environment } from '../../../environments/environment';
 
 @Injectable({
@@ -15,13 +14,12 @@ export class SkillService {
   public static RESOURCE = 'skills.json';
 
   constructor (
-    private http: HttpClient,
-    private langService: LangService
+    private http: HttpClient
   ) { }
 
   fetch (): Observable<Skill[]> {
     return this.http.get(
-      `${environment.baseUrl}/${SkillService.RESOURCE}?orderBy="lang"&equalTo="${this.langService.getActiveLang()}"`
+      `${environment.baseUrl}/${SkillService.RESOURCE}?orderBy="lang"&equalTo="fr"` // Skills should be the same no matter the language
     ).pipe(
       map((res) => res[Object.keys(res)[0]].skills),
       map((skills) => (new JsonConvert()).deserialize(skills, Skill))
