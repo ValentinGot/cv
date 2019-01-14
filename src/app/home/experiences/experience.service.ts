@@ -7,9 +7,10 @@ import { JsonConvert } from 'json2typescript';
 import { LangService } from '../../core/lang/lang.service';
 import { environment } from '../../../environments/environment';
 import { Experience } from './experience.model';
+import { HomeServiceModule } from '../service.module';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: HomeServiceModule
 })
 export class ExperienceService {
   public static RESOURCE = 'experiences.json';

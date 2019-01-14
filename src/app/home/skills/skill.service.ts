@@ -6,9 +6,10 @@ import { JsonConvert } from 'json2typescript';
 
 import { Skill } from './skill.model';
 import { environment } from '../../../environments/environment';
+import { HomeServiceModule } from '../service.module';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: HomeServiceModule
 })
 export class SkillService {
   public static RESOURCE = 'skills.json';

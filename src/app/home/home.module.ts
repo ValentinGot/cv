@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { MatIconModule, MatSnackBarModule, MatTooltipModule } from '@angular/material';
 
+import { HomeServiceModule } from './service.module';
+import { SharedModule } from '../shared/shared.module';
 import { HomeRoute } from './home.routing';
 import { HomeComponent } from './home.component';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
@@ -15,7 +17,6 @@ import { GithubCornerComponent } from './github-corner/github-corner.component';
 import { LanguageSelectorComponent } from './language-selector/language-selector.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { ExperienceComponent } from './experiences/experience/experience.component';
-import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { SharedModule } from '../shared/shared.module';
     MatTooltipModule,
     MatSnackBarModule,
     SharedModule,
+    HomeServiceModule,
     HomeRoute
   ],
   declarations: [
