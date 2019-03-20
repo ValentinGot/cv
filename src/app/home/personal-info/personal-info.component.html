@@ -1,37 +1,37 @@
 <div class="photo-container">
-  <img src="assets/photo.jpg" alt="{{ user.firstName }} {{ user.lastName }}" />
+  <img src="assets/photo.jpg" alt="{{ user.lastName }}" />
 </div>
 
-<h1 data-info="name">
+<h1 data-testid="name">
   {{ user.firstName }}
   <span>{{ user.lastName }}</span>
 </h1>
 
-<h2 data-info="job">{{ user.job }}</h2>
+<h2 data-testid="job">{{ user.job }}</h2>
 
 <div class="contact-information">
-  <p data-info="age">
+  <p data-testid="age">
     <mat-icon>hourglass_empty</mat-icon>
     {{ user.age }} ans</p>
-  <p data-info="location">
+  <p data-testid="location" *ngIf="user.address">
     <mat-icon>place</mat-icon>
     {{ user.address.city }}
     ({{ user.address.department }})
   </p>
-  <p data-info="email">
+  <p data-testid="email">
     <mat-icon>email</mat-icon>
     <a href="mailto:{{ user.email }}">{{ user.email }}</a>
   </p>
 </div>
 
-<div class="socials" *ngIf="user.socials.length > 0" data-info="socials">
+<div class="socials" *ngIf="user.socials?.length > 0" data-testid="socials">
   <a
     *ngFor="let social of user.socials"
     [href]="social.url"
     [attr.aria-label]="social.aria"
     target="_blank"
     rel="noopener"
-    data-info="social"
+    data-testid="social"
   >
     <mat-icon [svgIcon]="social.icon"></mat-icon>
   </a>

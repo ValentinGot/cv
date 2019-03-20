@@ -28,11 +28,19 @@ export class User {
   @JsonProperty('socials', [ Social ])
   socials: Social[] | undefined = undefined;
 
-  get age (): number {
+  get age (): number | null {
+    if (!this.birthDate) {
+      return null;
+    }
+
     const ageDiff = Date.now() - this.birthDate.getTime();
     const ageDate = new Date(ageDiff);
 
     return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
+
+  get fullName () {
+    return `${this.firstName} ${this.lastName}`;
   }
 
 }
