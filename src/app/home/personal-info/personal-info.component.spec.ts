@@ -1,6 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatIconModule } from '@angular/material/icon';
-import { By } from '@angular/platform-browser';
 
 import { PersonalInfoComponent } from './personal-info.component';
 import { Social, SocialType } from '../../shared/user/social.model';
@@ -70,7 +69,7 @@ describe('PersonalInfoComponent', () => {
       user.birthDate = new Date(1982, 4, 12);
       fixture.detectChanges();
 
-      expect(page.age.nativeElement.textContent).toContain('36 ans');
+      expect(page.age.nativeElement.textContent).toContain('37 ans');
     });
 
     it (`shouldn't show the user's location if there is no address`, () => {
