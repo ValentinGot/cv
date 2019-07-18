@@ -6,6 +6,7 @@ import { By } from '@angular/platform-browser';
 import { SkillsComponent } from './skills.component';
 import { SkillComponent } from './skill/skill.component';
 import { Skill } from './skill.model';
+import { MatIconModuleOverride } from '../../../test/mat-icon.component';
 
 describe ('SkillsComponent', () => {
   let component: SkillsComponent;
@@ -22,6 +23,7 @@ describe ('SkillsComponent', () => {
         SkillComponent
       ]
     })
+    .overrideModule(MatIconModule, MatIconModuleOverride)
     .compileComponents();
   }));
 

@@ -5,6 +5,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { SkillComponent } from './skill.component';
 import { Skill } from '../skill.model';
+import { MatIconModuleOverride } from '../../../../test/mat-icon.component';
 
 describe ('SkillComponent', () => {
   let component: SkillComponent;
@@ -18,6 +19,7 @@ describe ('SkillComponent', () => {
       ],
       declarations: [ SkillComponent ]
     })
+    // .overrideModule(MatIconModule, MatIconModuleOverride)
     .compileComponents();
   }));
 

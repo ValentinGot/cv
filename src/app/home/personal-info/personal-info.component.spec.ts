@@ -6,6 +6,7 @@ import { Social, SocialType } from '../../shared/user/social.model';
 import { Address } from '../../shared/user/address.model';
 import { User } from '../../shared/user/user.model';
 import { PersonalInfoComponentPage } from './personal-info.component.page';
+import { MatIconModuleOverride } from '../../../test/mat-icon.component';
 
 describe('PersonalInfoComponent', () => {
   let component: PersonalInfoComponent;
@@ -20,6 +21,7 @@ describe('PersonalInfoComponent', () => {
       ],
       declarations: [ PersonalInfoComponent ]
     })
+    .overrideModule(MatIconModule, MatIconModuleOverride)
     .compileComponents();
   }));
 
@@ -35,7 +37,7 @@ describe('PersonalInfoComponent', () => {
     component.user = user;
   });
 
-  fdescribe ('INIT', () => {
+  describe ('INIT', () => {
 
     it(`should throw an error if the 'user' input isn't present`, () => {
       component.user = undefined;

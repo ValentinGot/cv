@@ -4,6 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { TrainingComponent } from './training.component';
 import { Training } from '../training.model';
 import { By } from '@angular/platform-browser';
+import { MatIconModuleOverride } from '../../../../test/mat-icon.component';
 
 describe('TrainingComponent', () => {
   let component: TrainingComponent;
@@ -16,6 +17,7 @@ describe('TrainingComponent', () => {
       ],
       declarations: [ TrainingComponent ]
     })
+    .overrideModule(MatIconModule, MatIconModuleOverride)
     .compileComponents();
   }));
 
