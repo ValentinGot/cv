@@ -23,7 +23,7 @@ export class SkillService {
       `${environment.baseUrl}/${SkillService.RESOURCE}?orderBy="lang"&equalTo="fr"` // Skills should be the same no matter the language
     ).pipe(
       map((res) => res[Object.keys(res)[0]].skills),
-      map((skills) => (new JsonConvert()).deserialize(skills, Skill))
+      map((skills) => (new JsonConvert()).deserializeArray(skills, Skill))
     );
   }
 

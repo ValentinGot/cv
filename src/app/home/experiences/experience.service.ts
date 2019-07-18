@@ -26,7 +26,7 @@ export class ExperienceService {
     ).pipe(
       map((res) => res[Object.keys(res)[0]].experiences),
       map((experiences) => experiences.sort(this.sort)),
-      map((experiences) => (new JsonConvert()).deserialize(experiences, Experience))
+      map((experiences) => (new JsonConvert()).deserializeArray(experiences, Experience))
     );
   }
 

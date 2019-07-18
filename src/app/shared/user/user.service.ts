@@ -25,7 +25,7 @@ export class UserService {
       `${environment.baseUrl}/${UserService.RESOURCE}?orderBy="lang"&equalTo="${this.langService.getActiveLang()}"`
     ).pipe(
       map((res) => res[Object.keys(res)[0]]),
-      map((user) => (new JsonConvert()).deserialize(user, User))
+      map((user) => (new JsonConvert()).deserializeObject(user, User))
     );
   }
 

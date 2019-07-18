@@ -25,7 +25,7 @@ export class TrainingService {
       `${environment.baseUrl}/${TrainingService.RESOURCE}?orderBy="lang"&equalTo="${this.langService.getActiveLang()}"`
     ).pipe(
       map((res) => res[Object.keys(res)[0]].trainings),
-      map((trainings) => (new JsonConvert()).deserialize(trainings, Training))
+      map((trainings) => (new JsonConvert()).deserializeArray(trainings, Training))
     );
   }
 
