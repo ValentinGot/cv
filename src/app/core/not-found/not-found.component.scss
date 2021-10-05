@@ -1,0 +1,123 @@
+//----------------------------------------
+//  Not Found
+//----------------------------------------
+
+@import '../../../css/abstracts/break-points';
+@import '../../../css/abstracts/colors';
+@import '../../../css/abstracts/variables';
+
+//----------------------------------------
+
+:host {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: no-repeat url('../../../assets/404.jpg');
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 25px 20px 0;
+    color: $white;
+
+    @include breakpoint($bp-gt-xs) {
+      padding-top: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    div {
+      width: 140px;
+      height: 5px;
+      margin-bottom: 16px;
+      border-radius: 4px;
+      background-color: $white;
+
+      @include breakpoint($bp-gt-xs) {
+        width: 320px;
+      }
+
+    }
+
+    .p1 {
+      font-size: $font-size-100;
+
+      @include breakpoint($bp-gt-xs) {
+        font-size: $font-size-200;
+      }
+
+    }
+
+    .p2 {
+      font-size: $font-size-30;
+
+      @include breakpoint($bp-gt-xs) {
+        font-size: $font-size-42;
+      }
+
+    }
+
+    .p3 {
+      font-size: $font-size-18;
+
+      @include breakpoint($bp-gt-xs) {
+        font-size: $font-size-26
+      }
+
+      i {
+        font-family: Arial, sans-serif;
+      }
+
+    }
+
+    .go-back {
+      z-index: 10; // In front of 404 text
+      cursor: pointer;
+      width: 100%;
+      margin-top: 28px;
+      padding: 8px 0;
+      font-size: $font-size-20;
+      color: #1B6951;
+      background-color: rgba(255, 255, 255, .7);
+      text-align: center;
+      transition: background-color .25s;
+
+      @include breakpoint($bp-gt-xs) {
+        width: 400px;
+        padding: 16px 0;
+        font-size: $font-size-26;
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, .8);
+      }
+
+    }
+
+  }
+
+  .txt-404 {
+    display: none;
+    position: absolute;
+    bottom: 87px;
+    left: 575px;
+    margin: 0;
+    color: rgba(255, 255, 255, .8);
+    font-size: $font-size-240;
+    font-weight: 800;
+    text-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    transform: rotate(26deg);
+
+    @include breakpoint($bp-gt-xs) {
+      display: block;
+    }
+
+  }
+
+}
