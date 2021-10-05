@@ -1,11 +1,18 @@
 import { RouterModule } from '@angular/router';
 import { NotFoundComponent } from './core/not-found/not-found.component';
+import { HomeComponent } from './home/home.component';
 
-export const AppRoutes = RouterModule.forRoot([
+const appRoutes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
   {
     path: '**',
     component: NotFoundComponent
   }
-], {
+];
+
+export const AppRoutes = RouterModule.forRoot(appRoutes, {
   initialNavigation: 'enabled',
 });

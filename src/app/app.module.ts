@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routes';
 import { CoreModule } from './core/core.module';
+import { HomeModule } from './home/home.module';
 import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { TranslocoRootModule } from './transloco-root.module';
     HttpClientModule,
     TranslocoRootModule,
     CoreModule,
-    AppRoutes,
+    HomeModule,
+    AppRoutes
   ],
   declarations: [
     AppComponent
