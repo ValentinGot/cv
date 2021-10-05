@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+//----------------------------------------
+//  CV
+//----------------------------------------
+
+// Abstract
+@import 'css/abstracts/break-points';
+@import 'css/abstracts/colors';
+@import 'css/abstracts/mixins';
+@import 'css/abstracts/typography';
+
+// Vendors
+@import 'css/vendors/angular-material';
+
+// Base
+@import 'css/base/core';

@@ -1,0 +1,13 @@
+//----------------------------------------
+//  Mixins
+//----------------------------------------
+
+/// Helper to resize mat-icon icons
+///
+/// @param {Length} $size The desired size
+@mixin icon-size ($size) {
+  width: $size;
+  height: $size;
+  line-height: $size;
+  font-size: $size;
+}

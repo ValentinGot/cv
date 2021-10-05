@@ -1,0 +1,42 @@
+//----------------------------------------
+//  Core
+//----------------------------------------
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $cv-font;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  background-image: url('../../assets/texture.png');
+  color: $primary-text-color;
+}
+
+a {
+  text-decoration: none;
+  transition: .25s color, .25s background-color;
+  color: $primary-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($primary-color, 10%);
+  }
+
+}
+
+@media print {
+
+  body {
+    background-image: none;
+  }
+
+}
+
