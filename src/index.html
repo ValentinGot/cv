@@ -1,13 +1,63 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Cv</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <cv-root></cv-root>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Valentin GOT" />
+    <meta name="description" content="Valentin Got · Front end engineer / Lead developer · Rennes · CV" />
+    <title>Valentin Got · Front end engineer / Lead developer · Rennes · CV</title>
+    <link rel="canonical" href="https://cv.valentin-got.fr/" />
+    <base href="/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Theme the browser address bar -->
+    <meta name="theme-color" content="#A1D0CA"/>
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#A1D0CA" />
+    <meta name="apple-mobile-web-app-title" content="Valentin Got - CV" />
+    <link rel="apple-touch-icon" href="assets/launcher/launcher-128x128.png" />
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/launcher/launcher-144x14.png" />
+    <meta name="msapplication-TileColor" content="#A1D0CA" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <style>
+      .loader-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #A1D0CA;
+      }
+    </style>
+  </head>
+
+  <body>
+    <cv-root>
+      <div class="loader-container">
+        <img src="assets/loader.svg" />
+      </div>
+    </cv-root>
+
+    <noscript>
+      <p>Please enable JavaScript to continue using this application.</p>
+    </noscript>
+  </body>
 </html>
