@@ -27,6 +27,8 @@
     "@angular/router": "~12.1.1",
     "@ngneat/transloco": "^2.23.4",
     "@nguniversal/express-engine": "^12.1.0",
+    "@witty-services/ngx-serializer": "^1.0.5",
+    "@witty-services/ts-serializer": "^1.0.7",
     "express": "^4.15.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
