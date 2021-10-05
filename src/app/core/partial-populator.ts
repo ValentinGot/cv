@@ -38,7 +38,7 @@ import { JSON_PROPERTY_METADATA_KEY, JsonPropertyContextConfiguration } from '@w
 export abstract class PartialPopulator<T = any> {
 
   public constructor(obj?: Partial<T>) {
-    const jsonProperties: JsonPropertyContextConfiguration<T, any>[] = Reflect.getMetadata(JSON_PROPERTY_METADATA_KEY, this);
+    const jsonProperties: JsonPropertyContextConfiguration<T, any>[] = Reflect.getMetadata(JSON_PROPERTY_METADATA_KEY, this) || [];
 
     Object.keys(obj || {}).forEach((attribute: string) => {
       // @ts-ignore
