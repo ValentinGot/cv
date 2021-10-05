@@ -1,0 +1,13 @@
+<svg width="190" height="88.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 88.5">
+ <title>zend-framework-logo</title>
+
+ <g>
+  <rect fill="none" height="90.5" width="192" y="-1" x="-1"/>
+ </g>
+ <g>
+  <path class="icon-cls" fill="#ffffff" d="m86.470001,25.579999s0,-24.34 24.34,-24.34l73,0s0,24.34 -24.34,24.34l-73,0z"/>
+  <path class="icon-cls" fill="#ffffff" d="m86.470001,56.679999s0,-24.29 24.3,-24.29l36.51,0s0,24.34 -24.34,24.34l-36.47,-0.05z"/>
+  <path class="icon-cls" fill="#ffffff" d="m86.470001,87.779999s0,-24.39 24.3,-24.39l12.17,0s0,24.34 -24.34,24.34l-12.13,0.05z"/>
+  <polygon class="icon-cls" fill="#ffffff" points="78.27 68.78 78.27 88.2 0 88.2 50.42 19.42 7.14 19.42 7.14 0 88.78 0 38.6 68.78 78.27 68.78"/>
+ </g>
+</svg>

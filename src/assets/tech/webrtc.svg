@@ -1,0 +1,17 @@
+<svg width="382" height="350" viewBox="0 0 382 350" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <rect x="-1" y="-1" width="384" height="352" fill="none"/>
+  <g display="none">
+   <rect width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <ellipse fill="#ffffff" class="icon-cls" stroke-width="0" cx="190" cy="79" rx="77" ry="77" stroke="#000"/>
+  <ellipse fill="#ffffff" class="icon-cls" stroke-width="0" cx="300" cy="156" rx="77" ry="77" stroke="#000"/>
+  <ellipse fill="#ffffff" class="icon-cls" stroke-width="0" cx="255" cy="269" rx="77" ry="77" stroke="#000"/>
+  <ellipse fill="#ffffff" class="icon-cls" stroke-width="0" cx="125" cy="269" rx="77" ry="77" stroke="#000"/>
+  <ellipse fill="#ffffff" class="icon-cls" stroke-width="0" cx="80" cy="154" rx="77" ry="77" stroke="#000"/>
+ </g>
+</svg>

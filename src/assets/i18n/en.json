@@ -1,0 +1,24 @@
+{
+
+  "lang": {
+    "fr": "French",
+    "en": "English"
+  },
+
+  "app": {
+    "loading": "Loading"
+  },
+
+  "skill": {
+    "title": "skill{count, plural, =0{} one{} other{s}}"
+  },
+
+  "experience": {
+    "title": "experience{count, plural, =0{} one{} other{s}}"
+  },
+
+  "training": {
+    "title": "training{count, plural, =0{} one{} other{s}}"
+  }
+
+}
