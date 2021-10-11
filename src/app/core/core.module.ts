@@ -4,6 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { TranslocoModule } from '@ngneat/transloco';
 import { CoreServiceModule } from './core-service.module';
+import { GithubCornerComponent } from './github-corner/github-corner.component';
 import { LanguageSelectorComponent } from './language-selector/language-selector.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -17,10 +18,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   declarations: [
     LanguageSelectorComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    GithubCornerComponent
   ],
   exports: [
-    LanguageSelectorComponent
+    LanguageSelectorComponent,
+    GithubCornerComponent
   ]
 })
 export class CoreModule { }
