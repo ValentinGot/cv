@@ -174,6 +174,22 @@
             }
           },
           "defaultConfiguration": "production"
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "ssr": "cloud-functions",
+            "prerender": true,
+            "firebaseProject": "valentin-got-cv",
+            "firebaseHostingSite": "valentin-got-cv",
+            "functionName": "ssr_cv",
+            "functionsNodeVersion": "14",
+            "region": "us-central1",
+            "browserTarget": "cv:build:production",
+            "serverTarget": "cv:server:production",
+            "prerenderTarget": "cv:prerender:production",
+            "outputPath": "dist/cv/functions"
+          }
         }
       }
     }

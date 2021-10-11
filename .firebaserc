@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "valentin-got-cv": {
+      "hosting": {
+        "cv": [
+          "valentin-got-cv"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "valentin-got-cv"
+  }
+}
