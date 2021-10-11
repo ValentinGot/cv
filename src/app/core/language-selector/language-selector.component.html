@@ -1,0 +1,9 @@
+<ng-container *ngFor="let lang of languages">
+  <mat-icon
+    [svgIcon]="lang.flag"
+    [matTooltip]="lang.i18nKey | transloco"
+    [attr.data-testid]="'flag-' + lang.lang"
+    (click)="onSelectLanguage(lang)"
+    *ngIf="lang.lang !== activeLang"
+  ></mat-icon>
+</ng-container>

@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { TranslocoService } from '@ngneat/transloco';
 import { hot } from 'jasmine-marbles';
-import { getTranslocoModule } from '../../transloco-module.spec';
+import { getTranslocoModule } from '../../test/transloco-module.spec';
 import { LanguageService } from './language.service';
 import { LocalStorage } from './local-storage.service';
 
