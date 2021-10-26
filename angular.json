@@ -197,5 +197,12 @@
   "defaultProject": "cv",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
+  },
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "changeDetection": "OnPush"
+      }
+    }
   }
 }
