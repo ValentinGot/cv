@@ -16,6 +16,10 @@ body {
   margin: 0;
   background-image: url('../../assets/texture.png');
   color: $primary-text-color;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {

@@ -1,0 +1,197 @@
+//----------------------------------------
+//  Personal info
+//----------------------------------------
+
+@import '../../../css/abstracts/break-points';
+@import '../../../css/abstracts/colors';
+@import '../../../css/abstracts/ghost-animation';
+@import '../../../css/abstracts/mixins';
+@import '../../../css/abstracts/variables';
+
+//----------------------------------------
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 20px;
+
+  .photo-container {
+    text-align: center;
+    margin: 0 0 12px;
+
+    img {
+      border-radius: 50%;
+      height: 128px;
+    }
+
+  }
+
+  h1 {
+    margin: 0;
+    font-size: $font-size-50;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint($bp-gt-xs) {
+      font-size: $font-size-60;
+    }
+
+    span {
+      font-weight: 500;
+    }
+
+  }
+
+  h2 {
+    margin: 0;
+    font-size: $font-size-20;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint($bp-gt-xs) {
+      font-size: $font-size-24;
+    }
+
+  }
+
+  .contact-information {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0 0;
+
+    p {
+      display: flex;
+      align-items: center;
+      margin: 0 8px 0 0;
+      font-size: $font-size-14;
+
+      @include breakpoint($bp-gt-xs) {
+        font-size: $font-size-16;
+      }
+
+      .mat-icon {
+        @include icon-size($font-size-13);
+        margin-right: 4px;
+
+        @include breakpoint($bp-gt-xs) {
+          @include icon-size($font-size-18);
+        }
+
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      border-radius: 50%;
+      margin-right: 8px;
+      background-color: $primary-text-color;
+
+      .mat-icon {
+        @include icon-size($font-size-12);
+        color: #FFFFFF;
+      }
+
+      &:hover {
+        background-color: darken($primary-text-color, 10%);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+
+    &:before,
+    &:after {
+      display: block;
+      content: '';
+      width: 64px;
+      height: 0;
+      margin-top: -2px;
+      border-top: 4px dotted $divider-color;
+
+      @include breakpoint($bp-gt-xs) {
+        width: 93px;
+      }
+
+    }
+
+    &:before {
+      margin-right: 16px;
+    }
+
+    &:after {
+      margin-left: 16px;
+    }
+
+  }
+
+  &.ghost {
+
+    h1,
+    h2,
+    .contact-information {
+      @include ghost-line;
+      @include animate-ghost-line;
+      @include hide-text;
+    }
+
+    h1 {
+      width: 80%;
+      height: 58px;
+      margin-bottom: 5px;
+
+      @include breakpoint($bp-gt-xs) {
+        width: 345px;
+        height: 71px;
+      }
+
+    }
+
+    h2 {
+      width: 80%;
+      height: 26px;
+
+      @include breakpoint($bp-gt-xs) {
+        width: 345px;
+        height: 31px;
+      }
+
+    }
+
+    .contact-information {
+      height: 17px;
+      width: 70%;
+
+      @include breakpoint($bp-gt-xs) {
+        width: 300px;
+        height: 20px;
+      }
+
+    }
+
+  }
+
+}

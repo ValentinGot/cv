@@ -1,0 +1,42 @@
+<div class="photo-container">
+  <img src="assets/photo.jpg" [alt]="'personalInformation.photoAlt' | transloco" />
+</div>
+
+<h1>
+  {{ personalInformation?.firstName }}
+  <span>{{ personalInformation?.lastName }}</span>
+</h1>
+
+<h2>{{ personalInformation?.jobTitle }}</h2>
+
+<div class="contact-information">
+  <p>
+    <mat-icon>hourglass_empty</mat-icon>
+    {{ 'personalInformation.age' | transloco: { age: personalInformation?.age } }}
+  </p>
+  <p data-testid="location" *ngIf="personalInformation?.address">
+    <mat-icon>place</mat-icon>
+    {{ personalInformation.address.city }}
+    ({{ personalInformation.address.department }})
+  </p>
+  <p>
+    <mat-icon>email</mat-icon>
+    <a href="mailto:{{ personalInformation?.email }}">{{ personalInformation?.email }}</a>
+  </p>
+</div>
+
+<div
+  class="socials"
+  data-testid="socials"
+  *ngIf="personalInformation?.socials?.length > 0"
+>
+  <a
+    target="_blank"
+    rel="noopener noreferer"
+    [href]="social.url"
+    [attr.aria-label]="social.aria"
+    *ngFor="let social of personalInformation.socials"
+  >
+    <mat-icon [svgIcon]="social.icon"></mat-icon>
+  </a>
+</div>
