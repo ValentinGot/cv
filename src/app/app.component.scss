@@ -1,0 +1,29 @@
+//----------------------------------------
+//  CV
+//----------------------------------------
+
+@import '../css/abstracts/colors';
+
+//----------------------------------------
+
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 12px;
+  padding: 40px 0 0;
+  border: 4px dotted $divider-color;
+
+  .cv-language-selector {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+  }
+
+  .cv-github-corner {
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+  }
+
+}

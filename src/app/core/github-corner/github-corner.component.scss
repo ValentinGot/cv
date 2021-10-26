@@ -7,10 +7,10 @@
 //----------------------------------------
 
 .github-corner {
-  position: absolute;
-  top: 0;
-  border: 0;
-  right: 0;
+
+  @media print {
+    display: none;
+  }
 
   svg {
     fill: $primary-color;
@@ -35,10 +35,6 @@
       animation: octocat-wave 560ms ease-in-out;
     }
 
-  }
-
-  @media print {
-    display: none;
   }
 
 }
