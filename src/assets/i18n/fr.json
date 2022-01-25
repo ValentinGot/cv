@@ -11,7 +11,9 @@
     "age": "{{ age }} years old"
   },
   "skill": {
-    "title": "compétence{count, plural, =0{} one{} other{s}}"
+    "title": "compétence{count, plural, =0{} one{} other{s}}",
+    "iconAriaLabel": "Icône représentant la technologie {{ name }}",
+    "levelAriaLabel": "Niveau de {{ level }} sur {{ outOf }}"
   },
   "experience": {
     "title": "expérience{count, plural, =0{} one{} other{s}}"

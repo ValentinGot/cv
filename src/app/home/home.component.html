@@ -2,3 +2,9 @@
   [loading]="personalInformationLoading"
   [personalInformation]="personalInformation"
 ></cv-personal-information>
+
+<cv-skills
+  [loading]="cvLoading"
+  [skills]="skills"
+  *ngIf="skills?.length > 0"
+></cv-skills>

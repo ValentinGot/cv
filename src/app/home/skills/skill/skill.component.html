@@ -1,0 +1,17 @@
+<div class="icon-container">
+  <mat-icon
+    [svgIcon]="skill.icon"
+    [attr.aria-label]="'skill.iconAriaLabel' | transloco: { name: skill.name }"
+  ></mat-icon>
+</div>
+<div class="name-level-container">
+  <p class="name">{{ skill.name }}</p>
+  <div
+    class="level"
+    matTooltip="{{ skill.level }} / {{ OUT_OF }}"
+    matTooltipPosition="above"
+    [attr.aria-label]="'skill.levelAriaLabel' | transloco: { level: skill.level, outOf: OUT_OF }"
+  >
+    <span [style.width]="(skill.level * OUT_OF) + '%'"></span>
+  </div>
+</div>

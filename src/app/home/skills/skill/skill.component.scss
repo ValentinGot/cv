@@ -1,0 +1,73 @@
+//----------------------------------------
+//  Skill
+//----------------------------------------
+
+@import '../../../../css/abstracts/break-points';
+@import '../../../../css/abstracts/colors';
+@import '../../../../css/abstracts/mixins';
+
+$icon-background-color: #FFFFFF;
+$icon-print-background-color: #EEEEEE;
+$icon-color: $primary-color;
+$icon-secondary-color: $secondary-color;
+$level-background-color: #CCCCCC;
+$level-value-background-color: $primary-color;
+
+//----------------------------------------
+
+:host {
+  display: flex;
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin-right: 16px;
+    background-color: $icon-background-color;
+    border-radius: 50%;
+
+    .mat-icon {
+      @include icon-color($icon-color, $icon-secondary-color);
+    }
+
+  }
+
+  .name-level-container {
+    flex: 1;
+
+    .name {
+      margin: 0 0 4px;
+      text-transform: uppercase;
+    }
+
+    .level {
+      position: relative;
+      width: 100%;
+      height: 14px;
+      background-color: $level-background-color;
+      border-radius: 8px;
+
+      span {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        height: 14px;
+        background-color: $level-value-background-color;
+        border-radius: 8px;
+      }
+
+    }
+
+  }
+
+  @media print {
+
+    .icon-container {
+      background-color: $icon-print-background-color;
+    }
+
+  }
+
+}

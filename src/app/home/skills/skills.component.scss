@@ -1,0 +1,44 @@
+//----------------------------------------
+//  Skills
+//----------------------------------------
+
+@import '../../../css/abstracts/break-points';
+
+//----------------------------------------
+
+:host {
+  display: block;
+  padding: 20px 0;
+
+  .main-skills {
+
+    .cv-skill {
+      margin-bottom: 16px;
+    }
+
+  }
+
+  .secondary-skills {
+
+    .cv-skill {
+      margin-bottom: 16px;
+    }
+
+  }
+
+  @include breakpoint($bp-gt-xs) {
+
+    .secondary-skills {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .cv-skill {
+        width: 48%;
+      }
+
+    }
+
+  }
+
+}

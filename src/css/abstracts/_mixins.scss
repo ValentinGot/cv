@@ -11,3 +11,21 @@
   line-height: $size;
   font-size: $size;
 }
+
+/// Helper to set a mat-icon color
+///
+/// @param {Color} $color             Apply the color of the icon
+/// @param {Color} $secondary-color   Apply a secondary color of the icon, if there is one
+@mixin icon-color ($color, $secondary-color: null) {
+  ::ng-deep .icon-cls {
+    color: $color;
+    fill: $color;
+  }
+
+  @if $secondary-color {
+    ::ng-deep .icon-cls2 {
+      color: $secondary-color;
+      fill: $secondary-color;
+    }
+  }
+}
