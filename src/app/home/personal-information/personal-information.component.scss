@@ -148,6 +148,14 @@
 
   }
 
+  @media print {
+
+    .socials {
+      display: none;
+    }
+
+  }
+
   &.ghost {
 
     h1,
