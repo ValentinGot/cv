@@ -14,15 +14,15 @@
     "emailIconAriaLabel": "Icône représentant l'email"
   },
   "skill": {
-    "title": "compétence{count, plural, =0{} one{} other{s}}",
+    "title": "Compétence{count, plural, =0{} one{} other{s}}",
     "iconAriaLabel": "Icône représentant la technologie {{ name }}",
     "levelAriaLabel": "Niveau de {{ level }} sur {{ outOf }}"
   },
   "experience": {
-    "title": "expérience{count, plural, =0{} one{} other{s}}"
+    "title": "Expérience{count, plural, =0{} one{} other{s}}"
   },
   "training": {
-    "title": "formation{count, plural, =0{} one{} other{s}}"
+    "title": "Formation{count, plural, =0{} one{} other{s}}"
   },
   "notFound": {
     "sorry": "DÉSOLÉ",

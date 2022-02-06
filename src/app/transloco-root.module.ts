@@ -8,6 +8,7 @@ import {
   TranslocoModule
 } from '@ngneat/transloco';
 import { Injectable, NgModule } from '@angular/core';
+import { TranslocoMessageFormatModule } from '@ngneat/transloco-messageformat';
 import { environment } from '../environments/environment';
 
 @Injectable({ providedIn: 'root' })
@@ -24,6 +25,9 @@ export class TranslocoHttpLoader implements TranslocoLoader {
 }
 
 @NgModule({
+  imports: [
+    TranslocoMessageFormatModule.forRoot()
+  ],
   exports: [ TranslocoModule ],
   providers: [
     {

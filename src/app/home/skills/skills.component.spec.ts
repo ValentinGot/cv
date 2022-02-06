@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Skill } from '../../core/models/skill.model';
+import { getTranslocoModule } from '../../test/transloco-module.spec';
+import { TitleComponent } from '../title/title.component';
 import { SkillsComponent } from './skills.component';
 
 describe('SkillsComponent', () => {
@@ -14,7 +16,13 @@ describe('SkillsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SkillsComponent ]
+      imports: [
+        getTranslocoModule()
+      ],
+      declarations: [
+        SkillsComponent,
+        TitleComponent
+      ]
     })
     .compileComponents();
   });

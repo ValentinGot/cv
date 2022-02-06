@@ -7,6 +7,7 @@ import { HomeComponent } from './home.component';
 import { PersonalInformationComponent } from './personal-information/personal-information.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillComponent } from './skills/skill/skill.component';
+import { TitleComponent } from './title/title.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { SkillComponent } from './skills/skill/skill.component';
     HomeComponent,
     PersonalInformationComponent,
     SkillsComponent,
-    SkillComponent
+    SkillComponent,
+    TitleComponent
   ]
 })
 export class HomeModule { }
