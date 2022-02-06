@@ -3,7 +3,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { PersonalInformation } from '../../core/models/personal-information.model';
 import { SocialType } from '../../core/models/social-type.enum';
-import { getTranslocoModule } from '../../test/transloco-module.spec';
+import { TranslateTestingModule } from '../../test/transloco-module.spec';
 import { PersonalInformationComponent } from './personal-information.component';
 import { PersonalInformationComponentPage } from './personal-information.component.page';
 
@@ -15,7 +15,7 @@ describe('PersonalInformationComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        getTranslocoModule(),
+        TranslateTestingModule,
         MatIconModule,
         MatTooltipModule
       ],
