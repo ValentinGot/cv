@@ -8,7 +8,10 @@
   },
   "personalInformation": {
     "photoAlt": "Photo personnelle",
-    "age": "{{ age }} years old"
+    "ageIconAriaLabel": "Icône représentant l'âge",
+    "age": "{{ age }} years old",
+    "addressIconAriaLabel": "Icône représentant l'adresse",
+    "emailIconAriaLabel": "Icône représentant l'email"
   },
   "skill": {
     "title": "compétence{count, plural, =0{} one{} other{s}}",

@@ -11,16 +11,16 @@
 
 <div class="contact-information">
   <p>
-    <mat-icon>hourglass_empty</mat-icon>
+    <mat-icon [attr.aria-label]="'personalInformation.ageIconAriaLabel' | transloco">hourglass_empty</mat-icon>
     {{ 'personalInformation.age' | transloco: { age: personalInformation?.age } }}
   </p>
   <p data-testid="location" *ngIf="personalInformation?.address">
-    <mat-icon>place</mat-icon>
+    <mat-icon [attr.aria-label]="'personalInformation.addressIconAriaLabel' | transloco">place</mat-icon>
     {{ personalInformation.address.city }}
     ({{ personalInformation.address.department }})
   </p>
   <p>
-    <mat-icon>email</mat-icon>
+    <mat-icon [attr.aria-label]="'personalInformation.emailIconAriaLabel' | transloco">email</mat-icon>
     <a href="mailto:{{ personalInformation?.email }}">{{ personalInformation?.email }}</a>
   </p>
 </div>
@@ -34,6 +34,7 @@
     target="_blank"
     rel="noopener noreferer"
     [href]="social.url"
+    [matTooltip]="social.aria"
     [attr.aria-label]="social.aria"
     *ngFor="let social of personalInformation.socials"
   >

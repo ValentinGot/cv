@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { PersonalInformation } from '../../core/models/personal-information.model';
 import { SocialType } from '../../core/models/social-type.enum';
 import { getTranslocoModule } from '../../test/transloco-module.spec';
@@ -15,7 +16,8 @@ describe('PersonalInformationComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         getTranslocoModule(),
-        MatIconModule
+        MatIconModule,
+        MatTooltipModule
       ],
       declarations: [ PersonalInformationComponent ]
     })
