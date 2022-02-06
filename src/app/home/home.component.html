@@ -4,7 +4,7 @@
 ></cv-personal-information>
 
 <cv-skills
-  [loading]="cvLoading"
+  data-testid="skills"
   [skills]="skills"
   *ngIf="skills?.length > 0"
 ></cv-skills>

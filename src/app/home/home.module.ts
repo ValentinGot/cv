@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { TranslocoModule } from '@ngneat/transloco';
+import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home.component';
 import { PersonalInformationComponent } from './personal-information/personal-information.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -14,7 +15,8 @@ import { TitleComponent } from './title/title.component';
     CommonModule,
     TranslocoModule,
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    SharedModule
   ],
   declarations: [
     HomeComponent,

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Skill } from '../../core/models/skill.model';
 
 @Component({
@@ -8,10 +8,6 @@ import { Skill } from '../../core/models/skill.model';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SkillsComponent {
-
-  @Input()
-  @HostBinding('class.ghost')
-  loading: boolean;
 
   @Input()
   skills: Skill[];
