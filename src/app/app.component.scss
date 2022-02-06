@@ -2,6 +2,7 @@
 //  CV
 //----------------------------------------
 
+@import '../css/abstracts/break-points';
 @import '../css/abstracts/colors';
 
 //----------------------------------------
@@ -27,7 +28,18 @@
   }
 
   main {
-    flex: 1;
+    width: 100%;
+    padding: 0 12px;
+
+    @include breakpoint($bp-gt-md) {
+      width: 500px;
+    }
+
+  }
+
+  @media print {
+    padding: 0;
+    border: none;
   }
 
 }
