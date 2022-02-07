@@ -24,6 +24,9 @@ export class PersonalInformation {
   @JsonProperty()
   email: string;
 
+  @JsonProperty()
+  about: string;
+
   @JsonProperty(() => Social)
   socials: Social[];
 
