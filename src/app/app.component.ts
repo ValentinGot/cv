@@ -61,7 +61,9 @@ export class AppComponent implements OnInit {
       'less',
       'zend',
       'php',
-      'webpack'
+      'webpack',
+      'seo',
+      'a11y'
     ]);
   }
 

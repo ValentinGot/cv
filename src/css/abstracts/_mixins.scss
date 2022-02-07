@@ -18,14 +18,14 @@
 /// @param {Color} $secondary-color   Apply a secondary color of the icon, if there is one
 @mixin icon-color ($color, $secondary-color: null) {
   ::ng-deep .icon-cls {
-    color: $color;
-    fill: $color;
+    color: $color !important;
+    fill: $color !important;;
   }
 
   @if $secondary-color {
     ::ng-deep .icon-cls2 {
-      color: $secondary-color;
-      fill: $secondary-color;
+      color: $secondary-color !important;;
+      fill: $secondary-color !important;;
     }
   }
 }
