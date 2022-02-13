@@ -9,7 +9,7 @@
   "personalInformation": {
     "photoAlt": "Photo personnelle",
     "ageIconAriaLabel": "Icône représentant l'âge",
-    "age": "{{ age }} years old",
+    "age": "{{ age }} ans",
     "addressIconAriaLabel": "Icône représentant l'adresse",
     "emailIconAriaLabel": "Icône représentant l'email"
   },
