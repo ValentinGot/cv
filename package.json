@@ -11,7 +11,9 @@
     "serve:ssr": "node dist/cv/server/main.js",
     "build:ssr": "ng build && ng run cv:server",
     "prerender": "ng run cv:prerender",
-    "deploy": "ng deploy"
+    "deploy": "ng deploy",
+    "serve:firebase": "firebase serve --only hosting",
+    "deploy:firebase": "firebase deploy --only hosting"
   },
   "private": true,
   "dependencies": {
