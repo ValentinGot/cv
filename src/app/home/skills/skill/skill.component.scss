@@ -5,6 +5,7 @@
 @import '../../../../css/abstracts/break-points';
 @import '../../../../css/abstracts/colors';
 @import '../../../../css/abstracts/mixins';
+@import '../../../../css/abstracts/variables';
 
 $icon-background-color: #FFFFFF;
 $icon-print-background-color: #EEEEEE;
@@ -49,13 +50,29 @@ $level-value-background-color: $primary-color;
       background-color: $level-background-color;
       border-radius: 8px;
 
-      span {
+      .level-value {
         overflow: hidden;
         position: relative;
         display: block;
         height: 14px;
         background-color: $level-value-background-color;
         border-radius: 8px;
+      }
+
+      .print {
+        display: none;
+        position: absolute;
+        left: calc(50% - 15px);
+        top: 0;
+        width: 30px;
+        color: $black;
+        font-size: $font-size-12;
+        text-align: center;
+
+        @media print {
+          display: block;
+        }
+
       }
 
     }

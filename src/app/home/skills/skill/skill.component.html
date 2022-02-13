@@ -12,6 +12,7 @@
     matTooltipPosition="above"
     [attr.aria-label]="'skill.levelAriaLabel' | transloco: { level: skill.level, outOf: OUT_OF }"
   >
-    <span [style.width]="(skill.level * OUT_OF) + '%'"></span>
+    <span class="level-value" [style.width]="(skill.level * OUT_OF) + '%'"></span>
+    <span class="print">{{ skill.level }} / {{ OUT_OF }}</span>
   </div>
 </div>
