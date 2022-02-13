@@ -9,6 +9,6 @@ export const environment = {
     authDomain: 'valentin-got-cv.firebaseapp.com',
     messagingSenderId: '851621247006',
   },
-  baseUrl: 'http://localhost:4200',
+  baseUrl: 'https://cv.valentin-got.fr',
   production: true
 };
