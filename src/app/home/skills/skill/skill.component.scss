@@ -29,7 +29,7 @@ $level-value-background-color: $primary-color;
     border-radius: 50%;
 
     .mat-icon {
-      @include icon-color($icon-color, $icon-secondary-color);
+      @include icon-color($icon-color, $white);
     }
 
   }

@@ -8,7 +8,7 @@ import { LanguageService } from '../services/language.service';
   selector: 'cv-language-selector',
   templateUrl: './language-selector.component.html',
   styleUrls: ['./language-selector.component.scss'],
-  host: {
+  host: { // eslint-disable-line
     class: 'cv-language-selector'
   },
   changeDetection: ChangeDetectionStrategy.OnPush

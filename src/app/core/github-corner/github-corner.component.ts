@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   selector: 'cv-github-corner',
   templateUrl: './github-corner.component.html',
   styleUrls: ['./github-corner.component.scss'],
-  host: {
+  host: { // eslint-disable-line
     class: 'cv-github-corner'
   },
   changeDetection: ChangeDetectionStrategy.OnPush

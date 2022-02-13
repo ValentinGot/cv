@@ -58,6 +58,7 @@
     "@typescript-eslint/eslint-plugin": "4.28.2",
     "@typescript-eslint/parser": "4.28.2",
     "eslint": "^7.26.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "firebase-admin": "^9.11.1",
     "firebase-functions": "^3.6.0",
     "firebase-tools": "^9.20.0",

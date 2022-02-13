@@ -2,10 +2,10 @@ import { Component, Input } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({
-  selector: 'mat-icon',
+  selector: 'mat-icon', // eslint-disable-line
   template: ''
 })
-class MatIconMock {
+class MatIconMock { // eslint-disable-line
 
   @Input()
   svgIcon: any;

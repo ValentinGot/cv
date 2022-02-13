@@ -3,6 +3,18 @@
   "ignorePatterns": [
     "projects/**/*"
   ],
+  "plugins": [
+    "unused-imports"
+  ],
+  "rules": {
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "error",
+      { "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+    ],
+    "prefer-const": "error"
+  },
   "overrides": [
     {
       "files": [
@@ -19,6 +31,8 @@
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
+        "quotes": ["error", "single", { "allowTemplateLiterals": true } ],
+        "semi": ["error", "always"],
         "@angular-eslint/directive-selector": [
           "error",
           {
@@ -45,6 +59,14 @@
         "plugin:@angular-eslint/template/recommended"
       ],
       "rules": {}
+    },
+    {
+      "files": [
+        "*.spec.ts"
+      ],
+      "rules": {
+        "unused-imports/no-unused-vars": "off"
+      }
     }
   ]
 }

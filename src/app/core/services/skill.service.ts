@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { NgxSerializerService } from '@witty-services/ngx-serializer';
 import { Observable } from 'rxjs';
-import { filter, map, tap } from 'rxjs/operators';
+import { filter, map } from 'rxjs/operators';
 import { CoreServiceModule } from '../core-service.module';
 import { Skill, SkillResponse } from '../models/skill.model';
 import { LanguageService } from './language.service';

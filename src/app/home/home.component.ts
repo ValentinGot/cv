@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { MatSnackBar, MatSnackBarRef } from '@angular/material/snack-bar';
 import { forkJoin, Subject } from 'rxjs';
-import { finalize, switchMap, takeUntil, tap } from 'rxjs/operators';
+import { switchMap, takeUntil, tap } from 'rxjs/operators';
 import { Experience } from '../core/models/experience.model';
 import { PersonalInformation } from '../core/models/personal-information.model';
 import { Skill } from '../core/models/skill.model';
