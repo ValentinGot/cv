@@ -1,17 +1,16 @@
+import { APP_BASE_HREF } from '@angular/common';
+import '@angular/fire/firestore-protos';
+import { ngExpressEngine } from '@nguniversal/express-engine';
+import express from 'express';
+import { Express } from 'express';
+import { existsSync } from 'fs';
+import { join } from 'path';
 import 'zone.js/dist/zone-node';
 import 'zone.js/dist/zone-patch-rxjs';
-import '@angular/fire/firestore-protos';
-
-import { ngExpressEngine } from '@nguniversal/express-engine';
-import * as express from 'express';
-import { join } from 'path';
-
 import { AppServerModule } from './src/main.server';
-import { APP_BASE_HREF } from '@angular/common';
-import { existsSync } from 'fs';
 
 // The Express app is exported so that it can be used by serverless Functions.
-export function app(): express.Express {
+export function app(): Express {
   const server = express();
   const distFolder = join(process.cwd(), 'dist/cv/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';

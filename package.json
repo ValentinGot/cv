@@ -4,13 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:ssr": "ng run cv:serve-ssr",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "dev:ssr": "ng run cv:serve-ssr",
     "serve:ssr": "node dist/cv/server/main.js",
     "build:ssr": "ng build && ng run cv:server",
-    "prerender": "ng run cv:prerender"
+    "prerender": "ng run cv:prerender",
+    "deploy": "ng deploy"
   },
   "private": true,
   "dependencies": {
