@@ -34,6 +34,7 @@
         class="technology"
         target="_blank"
         rel="noopener noreferrer"
+        [attr.aria-label]="technology.name"
         [attr.data-testid]="'technologyUrl-' + i + '-' + j"
         [href]="technology.url"
         *ngIf="technology.url"
