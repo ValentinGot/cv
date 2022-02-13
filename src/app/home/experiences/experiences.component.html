@@ -1,0 +1,67 @@
+<cv-title>{{ 'experience.title' | transloco: { count: experiences.length } }}</cv-title>
+
+<div
+  class="experience"
+  *ngFor="let experience of experiences; let i = index"
+>
+  <div class="headline">
+    <p class="name">{{ experience.name }}</p>
+
+    <p class="duration">
+      <mat-icon
+        [attr.aria-label]="'experience.duration' | transloco"
+        [matTooltip]="'experience.duration' | transloco"
+      >today</mat-icon>
+
+      {{ experience.duration }}
+    </p>
+
+    <p class="company">
+      <mat-icon
+        [attr.aria-label]="'experience.company' | transloco"
+        [matTooltip]="'experience.company' | transloco"
+      >business</mat-icon>
+
+      {{ experience.company }}
+    </p>
+  </div>
+
+  <p class="description" [innerHTML]="experience.description"></p>
+
+  <div class="technologies">
+    <ng-container *ngFor="let technology of experience.technologies; let j = index">
+      <a
+        class="technology"
+        target="_blank"
+        rel="noopener noreferrer"
+        [attr.data-testid]="'technologyUrl-' + i + '-' + j"
+        [href]="technology.url"
+        *ngIf="technology.url"
+      >
+        <mat-icon
+          [svgIcon]="technology.icon"
+          [attr.aria-label]="technology.name"
+          [matTooltip]="technology.name"
+          matTooltipPosition="above"
+        >
+          {{ technology }}
+        </mat-icon>
+      </a>
+
+      <div
+        class="technology"
+        [attr.data-testid]="'technologyNoUrl-' + i + '-' + j"
+        *ngIf="!technology.url"
+      >
+        <mat-icon
+          [svgIcon]="technology.icon"
+          [attr.aria-label]="technology.name"
+          [matTooltip]="technology.name"
+          matTooltipPosition="above"
+        >
+          {{ technology }}
+        </mat-icon>
+      </div>
+    </ng-container>
+  </div>
+</div>

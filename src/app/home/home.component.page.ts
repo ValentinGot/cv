@@ -8,4 +8,8 @@ export class HomeComponentPage extends ComponentDriver<HomeComponent> {
     return this.queryByTestId('skills');
   }
 
+  get experiences(): DebugElement {
+    return this.queryByTestId('experiences');
+  }
+
 }

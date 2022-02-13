@@ -2,8 +2,10 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnIni
 import { MatSnackBar, MatSnackBarRef } from '@angular/material/snack-bar';
 import { forkJoin, Subject } from 'rxjs';
 import { finalize, switchMap, takeUntil, tap } from 'rxjs/operators';
+import { Experience } from '../core/models/experience.model';
 import { PersonalInformation } from '../core/models/personal-information.model';
 import { Skill } from '../core/models/skill.model';
+import { ExperienceService } from '../core/services/experience.service';
 import { LanguageService } from '../core/services/language.service';
 import { PersonalInformationService } from '../core/services/personal-information.service';
 import { SkillService } from '../core/services/skill.service';
@@ -19,6 +21,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   personalInformationLoading = true;
   personalInformation: PersonalInformation;
   skills: Skill[];
+  experiences: Experience[];
 
   private snackBarRef: MatSnackBarRef<LoadingSnackBarComponent>;
   private readonly onDestroy$: Subject<void> = new Subject<void>();
@@ -26,6 +29,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(
     private readonly personalInformationService: PersonalInformationService,
     private readonly skillService: SkillService,
+    private readonly experienceService: ExperienceService,
     private readonly languageService: LanguageService,
     private readonly snackBar: MatSnackBar,
     private readonly cd: ChangeDetectorRef
@@ -50,7 +54,8 @@ export class HomeComponent implements OnInit, OnDestroy {
       switchMap(() => {
         // Use forkJoin to wait for all results. It's cleaner visually than having the results appearing one by one.
         return forkJoin([
-          this.skillService.getAll()
+          this.skillService.getAll(),
+          this.experienceService.getAll()
         ]);
       }),
       takeUntil(this.onDestroy$)

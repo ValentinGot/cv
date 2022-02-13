@@ -9,6 +9,7 @@ import { PersonalInformationComponent } from './personal-information/personal-in
 import { SkillsComponent } from './skills/skills.component';
 import { SkillComponent } from './skills/skill/skill.component';
 import { TitleComponent } from './title/title.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { TitleComponent } from './title/title.component';
     PersonalInformationComponent,
     SkillsComponent,
     SkillComponent,
-    TitleComponent
+    TitleComponent,
+    ExperiencesComponent
   ]
 })
 export class HomeModule { }

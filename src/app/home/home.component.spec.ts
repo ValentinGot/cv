@@ -1,11 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { snapshotChanges } from '@angular/fire/compat/database';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBar, MatSnackBarModule, MatSnackBarRef } from '@angular/material/snack-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { Experience } from '../core/models/experience.model';
 import { Skill } from '../core/models/skill.model';
+import { ExperienceService } from '../core/services/experience.service';
 import { LanguageService } from '../core/services/language.service';
 import { LocalStorage } from '../core/services/local-storage.service';
 import { PersonalInformationService } from '../core/services/personal-information.service';
@@ -15,6 +16,7 @@ import { AngularFireTestingModule } from '../test/angular-fire-module.spec';
 import { MatIconModuleOverride } from '../test/mat-icon-module.spec';
 import { NgxSerializerTestingModule } from '../test/ngx-serializer-module.spec';
 import { TranslateTestingModule } from '../test/transloco-module.spec';
+import { ExperiencesComponent } from './experiences/experiences.component';
 import { HomeComponent } from './home.component';
 import { HomeComponentPage } from './home.component.page';
 import { PersonalInformationComponent } from './personal-information/personal-information.component';
@@ -42,6 +44,7 @@ describe('HomeComponent', () => {
       providers: [
         PersonalInformationService,
         SkillService,
+        ExperienceService,
         LanguageService,
         LocalStorage
       ],
@@ -51,6 +54,7 @@ describe('HomeComponent', () => {
         PersonalInformationComponent,
         SkillsComponent,
         SkillComponent,
+        ExperiencesComponent,
         TitleComponent
       ]
     })
@@ -80,6 +84,22 @@ describe('HomeComponent', () => {
       fixture.detectChanges();
 
       expect(page.skills).toBeFalsy();
+    });
+
+    it(`should show the list of experiences if there is at least one experience`, () => {
+      component.experiences = [
+        new Experience()
+      ];
+      fixture.detectChanges();
+
+      expect(page.experiences).toBeTruthy();
+    });
+
+    it(`should not show the list of experiences if there is no experiences`, () => {
+      component.experiences = null;
+      fixture.detectChanges();
+
+      expect(page.experiences).toBeFalsy();
     });
 
   });

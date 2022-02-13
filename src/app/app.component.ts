@@ -63,7 +63,8 @@ export class AppComponent implements OnInit {
       'php',
       'webpack',
       'seo',
-      'a11y'
+      'a11y',
+      'rxjs'
     ]);
   }
 

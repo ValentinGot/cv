@@ -19,7 +19,9 @@
     "levelAriaLabel": "Niveau de {{ level }} sur {{ outOf }}"
   },
   "experience": {
-    "title": "Expérience{count, plural, =0{} one{} other{s}}"
+    "title": "Expérience{count, plural, =0{} one{} other{s}} notable{count, plural, =0{} one{} other{s}}",
+    "duration": "Durée",
+    "company": "Entreprise"
   },
   "training": {
     "title": "Formation{count, plural, =0{} one{} other{s}}"
