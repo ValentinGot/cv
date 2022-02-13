@@ -23,6 +23,10 @@
     <mat-icon [attr.aria-label]="'personalInformation.emailIconAriaLabel' | transloco">email</mat-icon>
     <a href="mailto:{{ personalInformation?.email }}">{{ personalInformation?.email }}</a>
   </p>
+  <p class="print">
+    <mat-icon>language</mat-icon>
+    <a href="https://cv.valentin-got.fr">https://cv.valentin-got.fr</a>
+  </p>
 </div>
 
 <p class="about" [innerHTML]="personalInformation?.about"></p>

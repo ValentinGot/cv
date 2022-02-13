@@ -87,6 +87,15 @@
         margin-right: 0;
       }
 
+      &.print {
+        display: none;
+
+        @media print {
+          display: block;
+        }
+
+      }
+
     }
 
   }
