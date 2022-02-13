@@ -1,27 +1,34 @@
-# Cv
+<p align="center">
+  <a href="https://cv.valentin-got.fr/" target="_blank" rel="noopener noreferrer">
+    <img alt="Valentin GOT" src="https://github.com/ValentinGot/cv/blob/develop/src/assets/launcher/launcher-256x256.png?raw=true" />
+  </a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+<p align="center"><a href="https://cv.valentin-got.fr/" target="_blank" rel="noopener noreferrer">Personal resume</a></p>
 
-## Development server
+<p align="center">
+  <a href="https://github.com/ValentinGot/cv/actions/workflows/github-ci.yml" target="_blank" rel="noopener noreferrer">
+    <img alt="GitHub Actions" src="https://github.com/ValentinGot/cv/actions/workflows/github-ci.yml/badge.svg?branch=master" />
+  </a>
+  <a href="https://coveralls.io/github/ValentinGot/cv?branch=master" target="_blank" rel="noopener noreferrer">
+    <img src="https://coveralls.io/repos/github/ValentinGot/cv/badge.svg?branch=master" alt="Coverage Status" />
+  </a>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+# [Link to the resume](https://cv.valentin-got.fr/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Built with
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<a href="https://angular.io/" target="_blank" rel="noopener noreferrer">
+  <img alt="Angular" height="100px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/angular.png?raw=true" />
+</a>
+&nbsp;
+<a href="https://material.angular.io/" target="_blank" rel="noopener noreferrer">
+  <img alt="Angular Material" height="100px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/angular-material.png?raw=true" />
+</a>
+&nbsp;
+<a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer">
+  <img alt="Firebase" height="100px" src="https://github.com/ValentinGot/cv/blob/develop/docs/assets/firebase.png?raw=true" />
+</a>
