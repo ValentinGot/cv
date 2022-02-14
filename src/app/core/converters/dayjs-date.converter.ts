@@ -1,4 +1,4 @@
-import { Converter } from '@witty-services/ts-serializer';
+import { Converter } from '@paddls/ts-serializer';
 import dayjs, { Dayjs } from 'dayjs';
 
 export class DayjsDateConverter implements Converter<Dayjs, string> {

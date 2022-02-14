@@ -1,4 +1,4 @@
-import { JsonProperty } from '@witty-services/ts-serializer';
+import { JsonProperty } from '@paddls/ts-serializer';
 import { SocialType } from './social-type.enum';
 
 export class Social {

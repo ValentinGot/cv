@@ -1,4 +1,4 @@
-import { JSON_PROPERTY_METADATA_KEY, JsonPropertyContextConfiguration } from '@witty-services/ts-serializer';
+import { JSON_PROPERTY_METADATA_KEY, JsonPropertyContextConfiguration } from '@paddls/ts-serializer';
 
 /**
  * PartialPopulator allow to instantiate child class with base JavaScript Object.

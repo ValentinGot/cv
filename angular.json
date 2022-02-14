@@ -35,7 +35,7 @@
               "src/styles.scss"
             ],
             "allowedCommonJsDependencies": [
-              "@witty-services/ts-serializer"
+              "@paddls/ts-serializer"
             ],
             "scripts": []
           },

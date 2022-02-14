@@ -1,4 +1,4 @@
-import { JsonProperty } from '@witty-services/ts-serializer';
+import { JsonProperty } from '@paddls/ts-serializer';
 import dayjs, { Dayjs } from 'dayjs';
 import { DayjsDateConverter } from '../converters/dayjs-date.converter';
 import { Address } from './address.model';

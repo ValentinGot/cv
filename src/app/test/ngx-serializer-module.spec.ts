@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NgxSerializerModule } from '@witty-services/ngx-serializer';
+import { NgxSerializerModule } from '@paddls/ngx-serializer';
 
 @NgModule({
   imports: [
