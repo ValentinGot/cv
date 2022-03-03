@@ -1,0 +1,77 @@
+{
+  "skills": [
+    {
+      "level": 9,
+      "main": true,
+      "name": "Angular",
+      "icon": "tech:angular"
+    },
+    {
+      "name": "JavaScript",
+      "main": true,
+      "level": 9,
+      "icon": "tech:javascript"
+    },
+    {
+      "main": true,
+      "level": 9,
+      "icon": "tech:typescript",
+      "name": "TypeScript"
+    },
+    {
+      "icon": "tech:css",
+      "level": 9,
+      "main": true,
+      "name": "CSS"
+    },
+    {
+      "level": 7,
+      "icon": "tech:nodejs",
+      "name": "Node.js",
+      "main": false
+    },
+    {
+      "name": "UX / UI",
+      "main": false,
+      "icon": "tech:ux",
+      "level": 7
+    },
+    {
+      "main": false,
+      "icon": "tech:responsive",
+      "level": 9,
+      "name": "Responsive Design"
+    },
+    {
+      "name": "Git",
+      "level": 8,
+      "main": false,
+      "icon": "tech:git"
+    },
+    {
+      "name": "Sass",
+      "icon": "tech:sass",
+      "level": 9,
+      "main": false
+    },
+    {
+      "main": true,
+      "name": "Anglais",
+      "icon": "flag:gb",
+      "level": 9
+    },
+    {
+      "name": "SEO",
+      "level": 7,
+      "icon": "tech:seo",
+      "main": false
+    },
+    {
+      "level": 6,
+      "name": "Accessibilité",
+      "main": false,
+      "icon": "tech:a11y"
+    }
+  ],
+  "lang": "fr"
+}

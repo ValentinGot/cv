@@ -52,3 +52,6 @@ Thumbs.db
 
 # Reports
 reports/
+
+# Service accounts authent
+tools/service-account-auth.json

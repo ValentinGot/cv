@@ -1,0 +1,73 @@
+{
+  "lang": "fr",
+  "experiences": [
+    {
+      "order": 10,
+      "company": "SII",
+      "name": "Croix-Rouge Française // Nouveau SI",
+      "description": "Mise en place d'un SI complet pour toute la gestion de la Croix-Rouge Française:<br/>- Gestion des élections<br/>- Gestion des maraudes pour le Samu sociale (PWA et mode hors ligne)<br/>- Gestion des services civiques<br/>- et plusieurs applications d'administration",
+      "duration": "2016 / 2019 - 3.5 ans ",
+      "technologies": [
+        {
+          "icon": "tech:typescript",
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org"
+        },
+        {
+          "icon": "tech:angular",
+          "name": "Angular",
+          "url": "https://angular.io"
+        },
+        {
+          "icon": "tech:sass",
+          "url": "https://sass-lang.com",
+          "name": "Sass"
+        },
+        {
+          "name": "Git",
+          "icon": "tech:git",
+          "url": "https://git-scm.com"
+        },
+        {
+          "icon": "tech:webstorm",
+          "name": "WebStorm",
+          "url": "https://www.jetbrains.com/webstorm"
+        }
+      ]
+    },
+    {
+      "order": 20,
+      "company": "SII",
+      "name": "IMASCAP // Wsper",
+      "description": "Réalisation d'une plateforme web permettant de:<br/>- Répertorier les patients qui ont eu, ou vont avoir, une chirurgie de l'épaule<br/>- Collecter les données cliniquesissues de patients qui ont eu une chirurgie de l'épaule<br/>- Collaborer et communiquer entre chirurgiens",
+      "duration": "2018 / 2019 - 3 mois",
+      "technologies": [
+        {
+          "icon": "tech:typescript",
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org"
+        },
+        {
+          "icon": "tech:angular",
+          "name": "Angular",
+          "url": "https://angular.io"
+        },
+        {
+          "icon": "tech:sass",
+          "url": "https://sass-lang.com",
+          "name": "Sass"
+        },
+        {
+          "name": "Git",
+          "icon": "tech:git",
+          "url": "https://git-scm.com"
+        },
+        {
+          "icon": "tech:webstorm",
+          "name": "WebStorm",
+          "url": "https://www.jetbrains.com/webstorm"
+        }
+      ]
+    }
+  ]
+}

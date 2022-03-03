@@ -1,0 +1,31 @@
+{
+  "lang": "fr",
+  "address": {
+    "city": "Rennes",
+    "department": 35
+  },
+  "about": "Lead développeur front-end spécialisé dans le framework Angular.<br/>J’aime partager mes connaissances sur le framework par la dispense de formations TypeScript, Angular débutant & avancé plusieurs fois par ans pour les collaborateurs du Groupe SII ou pour ces clients.",
+  "socials": [
+    {
+      "type": "twitter",
+      "url": "https://twitter.com/ValentinGot"
+    },
+    {
+      "url": "https://www.linkedin.com/in/valentin-got-%F0%9F%8E%BE-59286761/",
+      "type": "linkedin"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/ValentinGot"
+    },
+    {
+      "url": "https://www.flickr.com/people/153055493@N07/",
+      "type": "flickr"
+    }
+  ],
+  "firstName": "Valentin",
+  "birthDate": "1991-09-03",
+  "lastName": "Got",
+  "jobTitle": "Ingénieur & Lead Dev. Front-End",
+  "email": "gotvalentin@gmail.com"
+}

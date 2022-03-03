@@ -1,0 +1,31 @@
+{
+  "socials": [
+    {
+      "url": "https://twitter.com/ValentinGot",
+      "type": "twitter"
+    },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/in/valentin-got-%F0%9F%8E%BE-59286761/"
+    },
+    {
+      "url": "https://github.com/ValentinGot",
+      "type": "github"
+    },
+    {
+      "type": "flickr",
+      "url": "https://www.flickr.com/people/153055493@N07/"
+    }
+  ],
+  "lastName": "Got",
+  "lang": "en",
+  "about": "Lead developer front-end specialized in the Angular Framework.<br/>I like sharing my knowledge on this framework by giving formations about TypeScript, Beginner & Advanced Angular several times a year for the Group SII company and its clients.",
+  "firstName": "Valentin",
+  "birthDate": "1991-09-03",
+  "address": {
+    "city": "Rennes",
+    "department": 35
+  },
+  "jobTitle": "Engineer & Front-End Lead Dev.",
+  "email": "gotvalentin@gmail.com"
+}
