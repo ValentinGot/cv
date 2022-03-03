@@ -20,12 +20,14 @@
   ::ng-deep .icon-cls {
     color: $color !important;
     fill: $color !important;
+    stroke: $color !important;
   }
 
   @if $secondary-color {
     ::ng-deep .icon-cls2 {
       color: $secondary-color !important;
       fill: $secondary-color !important;
+      stroke: $secondary-color !important;
     }
   }
 }
