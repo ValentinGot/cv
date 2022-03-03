@@ -4,6 +4,44 @@
     {
       "order": 10,
       "company": "SII",
+      "name": "TAC ECONOMICS",
+      "description": "Portail permettant de mesurer et d'alerter sur les risques et opportunités dans les domaines de l’économie et de la finance internationale.",
+      "duration": "2015 (5 mois)",
+      "technologies": [
+        {
+          "icon": "tech:javascript",
+          "name": "JavaScript"
+        },
+        {
+          "icon": "tech:angular",
+          "name": "AngularJS",
+          "url": "https://angularjs.org"
+        },
+        {
+          "icon": "tech:d3js",
+          "name": "D3.js",
+          "url": "https://d3js.org"
+        },
+        {
+          "icon": "tech:sass",
+          "url": "https://sass-lang.com",
+          "name": "Sass"
+        },
+        {
+          "name": "Git",
+          "icon": "tech:git",
+          "url": "https://git-scm.com"
+        },
+        {
+          "icon": "tech:sublimetext",
+          "name": "Sublime Text",
+          "url": "https://www.sublimetext.com"
+        }
+      ]
+    },
+    {
+      "order": 20,
+      "company": "SII",
       "name": "Croix-Rouge Française // Nouveau SI",
       "description": "Mise en place d'un SI complet pour toute la gestion de la Croix-Rouge Française:<br/>- Gestion des élections<br/>- Gestion des maraudes pour le Samu sociale (PWA et mode hors ligne)<br/>- Gestion des services civiques<br/>- et plusieurs applications d'administration",
       "duration": "2016 / 2019 - 3.5 ans ",
@@ -36,7 +74,7 @@
       ]
     },
     {
-      "order": 20,
+      "order": 30,
       "company": "SII",
       "name": "IMASCAP // Wsper",
       "description": "Réalisation d'une plateforme web permettant de:<br/>- Répertorier les patients qui ont eu, ou vont avoir, une chirurgie de l'épaule<br/>- Collecter les données cliniquesissues de patients qui ont eu une chirurgie de l'épaule<br/>- Collaborer et communiquer entre chirurgiens",
