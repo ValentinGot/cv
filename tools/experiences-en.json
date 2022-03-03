@@ -63,7 +63,7 @@
       "order": 20,
       "company": "SII",
       "name": "Croix-Rouge Française // Information system",
-      "description": "Building a full IS for the French Red Cross management:<br/>- Manage elections<br/>- Coordinate the assistance to homeless persons (PWA with offline mode)<br/>- Manage civic services<br/>- and many other applications to manage the Red Cross",
+      "description": "Set up a full IS for the French Red Cross:<br/>- Manage elections<br/>- Coordinate the assistance to homeless persons (PWA with offline mode)<br/>- Manage civic services<br/>- and many other applications to manage the Red Cross",
       "duration": "2016 to 2019 - 3,5 years",
       "technologies": [
         {
@@ -97,7 +97,7 @@
       "order": 30,
       "company": "SII",
       "name": "Télécom Santé // Parcours ambulatoire",
-      "description": "Trace the path of patients in ambulatory care using RFID terminals positioned throughout the way and RFID tags in each patient's beds.",
+      "description": "Traces the path of patients in ambulatory care using RFID terminals positioned throughout the way and RFID tags in each patient's beds.",
       "duration": "2016 - 3 months",
       "technologies": [
         {
