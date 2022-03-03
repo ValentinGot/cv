@@ -2,11 +2,141 @@
   "lang": "fr",
   "experiences": [
     {
+      "order": 0,
+      "company": "SII",
+      "name": "Brittany Ferries",
+      "description": "Lead développeur front-end sur la création du tout nouveau site de réservation en ligne de la Brittany Ferries :<br/>- Projet géré entièrement en anglais et en étroite collaboration avec les équipes anglaises de la Brittany Ferries<br/>- Utilisation d’Angular Universal pour la gestion du SEO et du cache<br/>- Mise en place d’un CMS headless (Contentful) pour la gestion du contenu",
+      "duration": "2020 à 2022 - 1,5 ans",
+      "technologies": [
+        {
+          "icon": "tech:typescript",
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org"
+        },
+        {
+          "icon": "tech:angular",
+          "name": "Angular & Angular Universal",
+          "url": "https://angular.io"
+        },
+        {
+          "icon": "tech:contentful",
+          "name": "Contentful",
+          "url": "https://www.contentful.com"
+        }
+      ]
+    },
+    {
       "order": 10,
+      "company": "SII",
+      "name": "IMASCAP // Wsper",
+      "description": "Réalisation d'une plateforme web permettant de:<br/>- Répertorier les patients qui ont eu, ou vont avoir, une chirurgie de l'épaule<br/>- Collecter les données cliniques issues de patients qui ont eu une chirurgie de l'épaule<br/>- Collaborer et communiquer entre chirurgiens",
+      "duration": "2018 - 3 mois",
+      "technologies": [
+        {
+          "icon": "tech:typescript",
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org"
+        },
+        {
+          "icon": "tech:angular",
+          "name": "Angular",
+          "url": "https://angular.io"
+        },
+        {
+          "icon": "tech:sass",
+          "name": "Sass",
+          "url": "https://sass-lang.com"
+        },
+        {
+          "name": "Git",
+          "icon": "tech:git",
+          "url": "https://git-scm.com"
+        },
+        {
+          "icon": "tech:webstorm",
+          "name": "WebStorm",
+          "url": "https://www.jetbrains.com/webstorm"
+        }
+      ]
+    },
+    {
+      "order": 20,
+      "company": "SII",
+      "name": "Croix-Rouge Française // Information system",
+      "description": "Mise en place d'un SI complet pour toute la gestion de la Croix-Rouge Française:<br/>- Gestion des élections<br/>- Gestion des maraudes pour le Samu sociale (PWA et mode hors ligne)<br/>- Gestion des services civiques<br/>- et plusieurs applications d'administration",
+      "duration": "2016 to 2019 - 3,5 ans",
+      "technologies": [
+        {
+          "icon": "tech:typescript",
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org"
+        },
+        {
+          "icon": "tech:angular",
+          "name": "Angular",
+          "url": "https://angular.io"
+        },
+        {
+          "icon": "tech:sass",
+          "name": "Sass",
+          "url": "https://sass-lang.com"
+        },
+        {
+          "name": "Git",
+          "icon": "tech:git",
+          "url": "https://git-scm.com"
+        },
+        {
+          "icon": "tech:webstorm",
+          "name": "WebStorm",
+          "url": "https://www.jetbrains.com/webstorm"
+        }
+      ]
+    },
+    {
+      "order": 30,
+      "company": "SII",
+      "name": "Télécom Santé // Parcours ambulatoire",
+      "description": "Traçage du parcours en service ambulatoire des patients d’un hôpital à l'aide de bornes RFID positionnées sur tout le parcours et de tags RFID positionnés dans le dossier de chaque patient.",
+      "duration": "2016 - 3 mois",
+      "technologies": [
+        {
+          "icon": "tech:javascript",
+          "name": "JavaScript"
+        },
+        {
+          "icon": "tech:sails",
+          "name": "Sails.js",
+          "url": "https://sailsjs.com"
+        },
+        {
+          "icon": "tech:sass",
+          "name": "Sass",
+          "url": "https://sass-lang.com"
+        },
+        {
+          "icon": "tech:mongodb",
+          "name": "MongoDB",
+          "url": "https://www.mongodb.com"
+        },
+        {
+          "name": "Git",
+          "icon": "tech:git",
+          "url": "https://git-scm.com"
+        },
+        {
+          "icon": "tech:webstorm",
+          "name": "WebStorm",
+          "url": "https://www.jetbrains.com/webstorm"
+        }
+      ]
+    },
+    {
+      "order": 40,
       "company": "SII",
       "name": "TAC ECONOMICS",
       "description": "Portail permettant de mesurer et d'alerter sur les risques et opportunités dans les domaines de l’économie et de la finance internationale.",
-      "duration": "2015 (5 mois)",
+      "duration": "2015 - 5 mois",
       "technologies": [
         {
           "icon": "tech:javascript",
@@ -24,8 +154,8 @@
         },
         {
           "icon": "tech:sass",
-          "url": "https://sass-lang.com",
-          "name": "Sass"
+          "name": "Sass",
+          "url": "https://sass-lang.com"
         },
         {
           "name": "Git",
@@ -36,74 +166,6 @@
           "icon": "tech:sublimetext",
           "name": "Sublime Text",
           "url": "https://www.sublimetext.com"
-        }
-      ]
-    },
-    {
-      "order": 20,
-      "company": "SII",
-      "name": "Croix-Rouge Française // Nouveau SI",
-      "description": "Mise en place d'un SI complet pour toute la gestion de la Croix-Rouge Française:<br/>- Gestion des élections<br/>- Gestion des maraudes pour le Samu sociale (PWA et mode hors ligne)<br/>- Gestion des services civiques<br/>- et plusieurs applications d'administration",
-      "duration": "2016 / 2019 - 3.5 ans ",
-      "technologies": [
-        {
-          "icon": "tech:typescript",
-          "name": "TypeScript",
-          "url": "https://www.typescriptlang.org"
-        },
-        {
-          "icon": "tech:angular",
-          "name": "Angular",
-          "url": "https://angular.io"
-        },
-        {
-          "icon": "tech:sass",
-          "url": "https://sass-lang.com",
-          "name": "Sass"
-        },
-        {
-          "name": "Git",
-          "icon": "tech:git",
-          "url": "https://git-scm.com"
-        },
-        {
-          "icon": "tech:webstorm",
-          "name": "WebStorm",
-          "url": "https://www.jetbrains.com/webstorm"
-        }
-      ]
-    },
-    {
-      "order": 30,
-      "company": "SII",
-      "name": "IMASCAP // Wsper",
-      "description": "Réalisation d'une plateforme web permettant de:<br/>- Répertorier les patients qui ont eu, ou vont avoir, une chirurgie de l'épaule<br/>- Collecter les données cliniquesissues de patients qui ont eu une chirurgie de l'épaule<br/>- Collaborer et communiquer entre chirurgiens",
-      "duration": "2018 / 2019 - 3 mois",
-      "technologies": [
-        {
-          "icon": "tech:typescript",
-          "name": "TypeScript",
-          "url": "https://www.typescriptlang.org"
-        },
-        {
-          "icon": "tech:angular",
-          "name": "Angular",
-          "url": "https://angular.io"
-        },
-        {
-          "icon": "tech:sass",
-          "url": "https://sass-lang.com",
-          "name": "Sass"
-        },
-        {
-          "name": "Git",
-          "icon": "tech:git",
-          "url": "https://git-scm.com"
-        },
-        {
-          "icon": "tech:webstorm",
-          "name": "WebStorm",
-          "url": "https://www.jetbrains.com/webstorm"
         }
       ]
     }

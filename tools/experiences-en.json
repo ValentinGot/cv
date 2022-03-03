@@ -1,5 +1,173 @@
 {
   "lang": "en",
   "experiences": [
+    {
+      "order": 0,
+      "company": "SII",
+      "name": "Brittany Ferries",
+      "description": "Front-end lead developer on the new Brittany Ferries booking website:<br/>- Project fully handled in english and in close collaboration with the Brittany Ferries UK teams<br/>- Uses Angular Universal for SEO and cache handling<br/>- Set up an headless CMS (Contentful) for content management",
+      "duration": "2020 to 2022 - 1,5 years",
+      "technologies": [
+        {
+          "icon": "tech:typescript",
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org"
+        },
+        {
+          "icon": "tech:angular",
+          "name": "Angular & Angular Universal",
+          "url": "https://angular.io"
+        },
+        {
+          "icon": "tech:contentful",
+          "name": "Contentful",
+          "url": "https://www.contentful.com"
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "company": "SII",
+      "name": "IMASCAP // Wsper",
+      "description": "Production of a web platform to:<br/>- List patients who have had, or are about to have, a shoulder surgery<br/>- Collect patients clinical data who have had a shoulder surgery<br/>- Collaborate and communicate between surgeons",
+      "duration": "2018 - 3 months",
+      "technologies": [
+        {
+          "icon": "tech:typescript",
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org"
+        },
+        {
+          "icon": "tech:angular",
+          "name": "Angular",
+          "url": "https://angular.io"
+        },
+        {
+          "icon": "tech:sass",
+          "name": "Sass",
+          "url": "https://sass-lang.com"
+        },
+        {
+          "name": "Git",
+          "icon": "tech:git",
+          "url": "https://git-scm.com"
+        },
+        {
+          "icon": "tech:webstorm",
+          "name": "WebStorm",
+          "url": "https://www.jetbrains.com/webstorm"
+        }
+      ]
+    },
+    {
+      "order": 20,
+      "company": "SII",
+      "name": "Croix-Rouge Française // Information system",
+      "description": "Building a full IS for the French Red Cross management:<br/>- Manage elections<br/>- Coordinate the assistance to homeless persons (PWA with offline mode)<br/>- Manage civic services<br/>- and many other applications to manage the Red Cross",
+      "duration": "2016 to 2019 - 3,5 years",
+      "technologies": [
+        {
+          "icon": "tech:typescript",
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org"
+        },
+        {
+          "icon": "tech:angular",
+          "name": "Angular",
+          "url": "https://angular.io"
+        },
+        {
+          "icon": "tech:sass",
+          "name": "Sass",
+          "url": "https://sass-lang.com"
+        },
+        {
+          "name": "Git",
+          "icon": "tech:git",
+          "url": "https://git-scm.com"
+        },
+        {
+          "icon": "tech:webstorm",
+          "name": "WebStorm",
+          "url": "https://www.jetbrains.com/webstorm"
+        }
+      ]
+    },
+    {
+      "order": 30,
+      "company": "SII",
+      "name": "Télécom Santé // Parcours ambulatoire",
+      "description": "Trace the path of patients in ambulatory care using RFID terminals positioned throughout the way and RFID tags in each patient's beds.",
+      "duration": "2016 - 3 months",
+      "technologies": [
+        {
+          "icon": "tech:javascript",
+          "name": "JavaScript"
+        },
+        {
+          "icon": "tech:sails",
+          "name": "Sails.js",
+          "url": "https://sailsjs.com"
+        },
+        {
+          "icon": "tech:sass",
+          "name": "Sass",
+          "url": "https://sass-lang.com"
+        },
+        {
+          "icon": "tech:mongodb",
+          "name": "MongoDB",
+          "url": "https://www.mongodb.com"
+        },
+        {
+          "name": "Git",
+          "icon": "tech:git",
+          "url": "https://git-scm.com"
+        },
+        {
+          "icon": "tech:webstorm",
+          "name": "WebStorm",
+          "url": "https://www.jetbrains.com/webstorm"
+        }
+      ]
+    },
+    {
+      "order": 40,
+      "company": "SII",
+      "name": "TAC ECONOMICS",
+      "description": "Portal to measure and alert on risks and opportunities in the finance and economic international fields.",
+      "duration": "2015 - 5 months",
+      "technologies": [
+        {
+          "icon": "tech:javascript",
+          "name": "JavaScript"
+        },
+        {
+          "icon": "tech:angular",
+          "name": "AngularJS",
+          "url": "https://angularjs.org"
+        },
+        {
+          "icon": "tech:d3js",
+          "name": "D3.js",
+          "url": "https://d3js.org"
+        },
+        {
+          "icon": "tech:sass",
+          "name": "Sass",
+          "url": "https://sass-lang.com"
+        },
+        {
+          "name": "Git",
+          "icon": "tech:git",
+          "url": "https://git-scm.com"
+        },
+        {
+          "icon": "tech:sublimetext",
+          "name": "Sublime Text",
+          "url": "https://www.sublimetext.com"
+        }
+      ]
+    }
   ]
 }

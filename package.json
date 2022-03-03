@@ -13,7 +13,8 @@
     "prerender": "ng run cv:prerender",
     "deploy": "ng deploy",
     "serve:firebase": "firebase serve --only hosting",
-    "deploy:firebase": "firebase deploy --only hosting"
+    "deploy:firebase": "firebase deploy --only hosting",
+    "firestore:update": "node ./tools/firestore.js"
   },
   "private": true,
   "dependencies": {

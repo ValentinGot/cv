@@ -64,7 +64,8 @@ export class AppComponent implements OnInit {
       'webpack',
       'seo',
       'a11y',
-      'rxjs'
+      'rxjs',
+      'contentful'
     ]);
   }
 
