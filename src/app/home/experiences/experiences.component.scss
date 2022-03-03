@@ -15,12 +15,8 @@
 
   .experience {
     position: relative;
-    margin: 0 0 32px;
+    margin: 0 0 55px;
     padding: 0 0 13px;
-
-    @include breakpoint($bp-gt-xs) {
-      margin-bottom: 48px;
-    }
 
     &:last-child {
       margin-bottom: 0;
@@ -89,7 +85,7 @@
         margin: 0 12px 0 0;
 
         .mat-icon {
-          @include icon-color($primary-color, $white);
+          @include icon-color($primary-color, lighten($primary-color, 10%));
         }
 
         &:last-child {

@@ -212,6 +212,10 @@
         height: 20px;
       }
 
+      a {
+        @include hide-text;
+      }
+
     }
 
   }
