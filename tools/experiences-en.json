@@ -5,8 +5,8 @@
       "order": 0,
       "company": "SII",
       "name": "Brittany Ferries",
-      "description": "Front-end lead developer on the new Brittany Ferries booking website:<br/>- Project fully handled in english and in close collaboration with the Brittany Ferries UK teams<br/>- Uses Angular Universal for SEO and cache handling<br/>- Set up an headless CMS (Contentful) for content management",
-      "duration": "2020 to 2022 - 1,5 years",
+      "description": "Front-end lead developer on the new Brittany Ferries booking website.<br/>A lot of new challenges linked to public websites: performances, SEO (Angular Universal), headless CMS (Contentful), cache, accessibility.<br/>Project fully handled in english and in close collaboration with the Brittany Ferries UK teams.",
+      "duration": "2020 - in progress",
       "technologies": [
         {
           "icon": "tech:typescript",

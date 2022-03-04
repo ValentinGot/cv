@@ -5,8 +5,8 @@
       "order": 0,
       "company": "SII",
       "name": "Brittany Ferries",
-      "description": "Lead développeur front-end sur la création du tout nouveau site de réservation en ligne de la Brittany Ferries :<br/>- Projet géré entièrement en anglais et en étroite collaboration avec les équipes anglaises de la Brittany Ferries<br/>- Utilisation d’Angular Universal pour la gestion du SEO et du cache<br/>- Mise en place d’un CMS headless (Contentful) pour la gestion du contenu",
-      "duration": "2020 à 2022 - 1,5 ans",
+      "description": "Lead développeur front-end sur la mise en place du nouveau site de réservation en ligne de la Brittany Ferries.<br/>Nombreux challenges liés aux contraintes des sites grands publiques : performances, SEO (Angular Universal), CMS headless (Contentful), cache, accessibilité.<br/>Projet géré entièrement en anglais et en étroite collaboration avec les équipes anglaises de la Brittany Ferries",
+      "duration": "2020 - en cours",
       "technologies": [
         {
           "icon": "tech:typescript",
