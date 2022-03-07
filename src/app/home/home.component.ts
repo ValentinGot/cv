@@ -68,7 +68,6 @@ export class HomeComponent implements OnInit, OnDestroy {
       this.skills = skills;
       this.experiences = experiences;
       this.career = career;
-      console.log(this.career);
 
       this.hideLoadingSnackBar();
       this.cd.detectChanges();
