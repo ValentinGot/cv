@@ -64,7 +64,7 @@
       "company": "SII",
       "name": "Croix-Rouge Française // Nouveau SI",
       "description": "Mise en place d'un SI complet pour toute la gestion de la Croix-Rouge Française:<br/>- Gestion des élections<br/>- Gestion des maraudes pour le Samu sociale (PWA et mode hors ligne)<br/>- Gestion des services civiques<br/>- et plusieurs applications d'administration",
-      "duration": "2016 à 2019 - 3,5 ans",
+      "duration": "2016 à 2019 - 3 ans",
       "technologies": [
         {
           "icon": "tech:typescript",
@@ -75,6 +75,11 @@
           "icon": "tech:angular",
           "name": "Angular",
           "url": "https://angular.io"
+        },
+        {
+          "icon": "tech:angular",
+          "name": "AngularJS",
+          "url": "https://angularjs.org"
         },
         {
           "icon": "tech:sass",

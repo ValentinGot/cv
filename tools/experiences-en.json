@@ -64,7 +64,7 @@
       "company": "SII",
       "name": "Croix-Rouge Française // Information system",
       "description": "Set up a full IS for the French Red Cross:<br/>- Manage elections<br/>- Coordinate the assistance to homeless persons (PWA with offline mode)<br/>- Manage civic services<br/>- and many other applications to manage the Red Cross",
-      "duration": "2016 to 2019 - 3,5 years",
+      "duration": "2016 to 2019 - 3 years",
       "technologies": [
         {
           "icon": "tech:typescript",
@@ -75,6 +75,11 @@
           "icon": "tech:angular",
           "name": "Angular",
           "url": "https://angular.io"
+        },
+        {
+          "icon": "tech:angular",
+          "name": "AngularJS",
+          "url": "https://angularjs.org"
         },
         {
           "icon": "tech:sass",
