@@ -1,0 +1,24 @@
+{
+  "lang": "en",
+  "career": [
+    {
+      "name": "Groupe SII",
+      "subtitle": "Front-end lead developer",
+      "duration": "2015 - ?"
+    },
+    {
+      "name": "ESIPE MLV",
+      "subtitle": "IT and Network engineer",
+      "duration": "2014"
+    },
+    {
+      "name": "2-year technical degree",
+      "subtitle": "Network and Telecommunications",
+      "duration": "2011"
+    },
+    {
+      "name": "A-Level",
+      "duration": "2009"
+    }
+  ]
+}

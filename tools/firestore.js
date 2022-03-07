@@ -14,6 +14,16 @@ const database = {
       document: require('./personal-infos-en.json')
     }
   ],
+  skills: [
+    {
+      id: '4bUNvDLbVv1NE7jOtbEF',
+      document: require('./skills-fr.json')
+    },
+    {
+      id: 'xZLzHDmoVP9JUygs6WeQ',
+      document: require('./skills-en.json')
+    }
+  ],
   experiences: [
     {
       id: 'HYOP0cpqsas080B8brXO',
@@ -24,14 +34,14 @@ const database = {
       document: require('./experiences-en.json')
     }
   ],
-  skills: [
+  career: [
     {
-      id: '4bUNvDLbVv1NE7jOtbEF',
-      document: require('./skills-fr.json')
+      id: 'd57ZOHfB1SSJLUxH3OCu',
+      document: require('./career-fr.json')
     },
     {
-      id: 'xZLzHDmoVP9JUygs6WeQ',
-      document: require('./skills-en.json')
+      id: 'kXpEvQhuZvV4y9nAENMg',
+      document: require('./career-en.json')
     }
   ]
 };

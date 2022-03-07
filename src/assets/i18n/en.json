@@ -23,8 +23,8 @@
     "duration": "Duration",
     "company": "Company"
   },
-  "training": {
-    "title": "Training{count, plural, =0{} one{} other{s}}"
+  "career": {
+    "title": "My career path"
   },
   "notFound": {
     "sorry": "SORRY",

@@ -4,9 +4,12 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBar, MatSnackBarModule, MatSnackBarRef } from '@angular/material/snack-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { Career } from '../core/models/career.model';
 import { Experience } from '../core/models/experience.model';
 import { Skill } from '../core/models/skill.model';
+import { CareerService } from '../core/services/career.service';
 import { ExperienceService } from '../core/services/experience.service';
+import { FirestoreService } from '../core/services/firestore.service';
 import { LanguageService } from '../core/services/language.service';
 import { LocalStorage } from '../core/services/local-storage.service';
 import { PersonalInformationService } from '../core/services/personal-information.service';
@@ -16,6 +19,7 @@ import { AngularFireTestingModule } from '../test/angular-fire-module.spec';
 import { MatIconModuleOverride } from '../test/mat-icon-module.spec';
 import { NgxSerializerTestingModule } from '../test/ngx-serializer-module.spec';
 import { TranslateTestingModule } from '../test/transloco-module.spec';
+import { CareerComponent } from './career/career.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { HomeComponent } from './home.component';
 import { HomeComponentPage } from './home.component.page';
@@ -45,7 +49,9 @@ describe('HomeComponent', () => {
         PersonalInformationService,
         SkillService,
         ExperienceService,
+        CareerService,
         LanguageService,
+        FirestoreService,
         LocalStorage
       ],
       declarations: [
@@ -55,6 +61,7 @@ describe('HomeComponent', () => {
         SkillsComponent,
         SkillComponent,
         ExperiencesComponent,
+        CareerComponent,
         TitleComponent
       ]
     })
@@ -100,6 +107,22 @@ describe('HomeComponent', () => {
       fixture.detectChanges();
 
       expect(page.experiences).toBeFalsy();
+    });
+
+    it(`should show the career if there is at least one item`, () => {
+      component.career = [
+        new Career()
+      ];
+      fixture.detectChanges();
+
+      expect(page.career).toBeTruthy();
+    });
+
+    it(`should not show the career if there is no item`, () => {
+      component.career = null;
+      fixture.detectChanges();
+
+      expect(page.career).toBeFalsy();
     });
 
   });

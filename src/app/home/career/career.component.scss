@@ -1,0 +1,243 @@
+@import '../../../css/abstracts/break-points';
+@import '../../../css/abstracts/colors';
+@import '../../../css/abstracts/mixins';
+@import '../../../css/abstracts/variables';
+
+//----------------------------------------
+
+:host {
+  display: block;
+  padding: 0 0 20px;
+
+  .item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px;
+    padding-bottom: 13px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 60px);
+      width: 60px;
+      height: 5px;
+      background-color: $primary-color;
+
+      @include breakpoint($bp-gt-xs) {
+        left: calc(50% - 75px);
+        width: 150px;
+      }
+
+    }
+
+    .name-subtitle-container {
+      margin-right: 20px;
+
+      .name {
+        margin: 0;
+        font-size: $font-size-18;
+        font-weight: 500;
+      }
+
+      .subtitle {
+        margin: 8px 0 0;
+        font-size: $font-size-14;
+      }
+
+      .sub-title {
+        //margin: -3px 0 0 14px;
+        //white-space: nowrap;
+        font-weight: 400;
+        font-size: 11px;
+
+        &:before {
+          display: none;
+        }
+
+      }
+
+    }
+
+    .duration {
+      display: flex;
+      align-items: center;
+      margin: 0;
+
+      .mat-icon {
+        @include icon-size($font-size-20);
+        margin-right: 4px;
+        color: $primary-color;
+      }
+
+    }
+
+  }
+
+}
+
+//:host {
+//  display: block;
+//  padding: 20px 0;
+//
+//  .trainings-container {
+//    display: flex;
+//    flex-direction: column-reverse;
+//
+//    cv-training {
+//      margin: 0 0 16px;
+//
+//      // First child because we reversed the items with `flex-direction: column-reverse`
+//      &:first-child {
+//        margin-bottom: 0;
+//        padding-bottom: 0;
+//
+//        &:after {
+//          height: 0;
+//        }
+//
+//      }
+//
+//    }
+//
+//  }
+//
+//  @include breakpoint($bp-gt-xs) {
+//    padding: 45px 0 20px;
+//
+//    .trainings-container {
+//      position: relative;
+//      flex-direction: row;
+//      justify-content: center;
+//
+//      &:before {
+//        position: absolute;
+//        top: 13px;
+//        content: '';
+//        width: 100%;
+//        border-top: 4px dotted $secondary-color;
+//      }
+//
+//    }
+//
+//  }
+//
+//}
+
+//.item {
+//  position: relative;
+//  display: flex;
+//  justify-content: center;
+//  padding-bottom: 8px;
+//
+//  .name-sub-title-container {
+//    display: flex;
+//
+//    .name {
+//      margin: 0;
+//      font-weight: 500;
+//    }
+//
+//    .sub-title {
+//      margin: 0;
+//      font-weight: 500;
+//
+//      &:before {
+//        content: '//';
+//        margin: 0 8px;
+//      }
+//
+//    }
+//
+//  }
+//
+//  .year {
+//    display: flex;
+//    align-items: center;
+//    margin: 0 0 0 16px;
+//    font-weight: 500;
+//
+//    .mat-icon {
+//      margin-right: 4px;
+//      @include icon-size(20px);
+//    }
+//
+//  }
+//
+//  &:after {
+//    position: absolute;
+//    bottom: 0;
+//    left: calc(50% - 50px);
+//    content: '';
+//    height: 4px;
+//    background-color: $primary-color;
+//    width: 100px;
+//  }
+//
+//  @include breakpoint($bp-gt-xs) {
+//    flex-direction: column;
+//    align-items: center;
+//    justify-content: flex-start;
+//    width: 150px;
+//    margin: 0;
+//    padding: 0;
+//
+//    .name-sub-title-container {
+//      display: block;
+//      position: absolute;
+//      top: -14px;
+//      left: 80px;
+//      transform: rotate(-20deg);
+//      height: 20px;
+//
+//      .sub-title {
+//        margin: -3px 0 0 14px;
+//        white-space: nowrap;
+//        font-weight: 400;
+//        font-size: 11px;
+//
+//        &:before {
+//          display: none;
+//        }
+//
+//      }
+//
+//      &.has-sub-title {
+//        height: 34px;
+//        top: -34px;
+//      }
+//
+//    }
+//
+//    .circle {
+//      display: block;
+//      width: 10px;
+//      height: 10px;
+//      margin-top: 10px;
+//      background-color: $secondary-color;
+//      border-radius: 50%;
+//    }
+//
+//    .year {
+//      margin: 4px 0 0;
+//      font-weight: 500;
+//      font-size: 13px;
+//
+//      .mat-icon {
+//        display: none;
+//      }
+//
+//    }
+//
+//    &:after {
+//      display: none;
+//    }
+//
+//  }
+//
+//}

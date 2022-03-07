@@ -12,4 +12,8 @@ export class HomeComponentPage extends ComponentDriver<HomeComponent> {
     return this.queryByTestId('experiences');
   }
 
+  get career(): DebugElement {
+    return this.queryByTestId('career');
+  }
+
 }

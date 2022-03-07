@@ -1,0 +1,24 @@
+{
+  "lang": "fr",
+  "career": [
+    {
+      "name": "Groupe SII",
+      "subtitle": "Lead développeur front-end",
+      "duration": "2015 - ?"
+    },
+    {
+      "name": "ESIPE MLV",
+      "subtitle": "Ingénieur Informatique et Réseaux",
+      "duration": "2014"
+    },
+    {
+      "name": "IUT",
+      "subtitle": "Réseaux et Télécommunications",
+      "duration": "2011"
+    },
+    {
+      "name": "BAC S",
+      "duration": "2009"
+    }
+  ]
+}

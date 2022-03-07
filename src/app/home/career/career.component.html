@@ -1,0 +1,15 @@
+<cv-title>{{ 'career.title' | transloco }}</cv-title>
+
+<div class="item" *ngFor="let item of career; let i = index">
+  <div class="name-subtitle-container">
+    <p class="name">{{ item.name }}</p>
+    <p class="subtitle" [attr.data-testid]="'subtitle-' + i" *ngIf="item.subtitle">{{ item.subtitle }}</p>
+  </div>
+  <p class="duration">
+    <mat-icon
+      [attr.aria-label]="'career.duration' | transloco"
+      [matTooltip]="'career.duration' | transloco"
+    >today</mat-icon>
+    {{ item.duration }}
+  </p>
+</div>
