@@ -1,11 +1,6 @@
 import { JsonProperty } from '@paddls/ts-serializer';
 import { PartialPopulator } from '../partial-populator';
 
-export interface SkillResponse {
-  lang: string;
-  skills: Skill[];
-}
-
 export class Skill extends PartialPopulator<Skill> {
 
   @JsonProperty()
